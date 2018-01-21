@@ -196,7 +196,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(190, 125);
             this.panel1.TabIndex = 0;
-            this.panel1.Visible = false;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // button27
@@ -208,7 +207,6 @@
             this.button27.TabIndex = 3;
             this.button27.Text = "button27";
             this.button27.UseVisualStyleBackColor = true;
-            this.button27.Visible = false;
             this.button27.Click += new System.EventHandler(this.button27_Click);
             // 
             // label3
@@ -219,7 +217,6 @@
             this.label3.Size = new System.Drawing.Size(35, 12);
             this.label3.TabIndex = 2;
             this.label3.Text = "500円";
-            this.label3.Visible = false;
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
@@ -231,7 +228,6 @@
             this.label2.Size = new System.Drawing.Size(59, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "肉うどん";
-            this.label2.Visible = false;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button6
@@ -244,11 +240,11 @@
             this.button6.TabIndex = 0;
             this.button6.Text = "購入";
             this.button6.UseVisualStyleBackColor = false;
-            this.button6.Visible = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // panel2
             // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.button29);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label8);
@@ -269,7 +265,6 @@
             this.button29.TabIndex = 5;
             this.button29.Text = "button29";
             this.button29.UseVisualStyleBackColor = true;
-            this.button29.Visible = false;
             this.button29.Click += new System.EventHandler(this.button29_Click);
             // 
             // label7
@@ -280,7 +275,6 @@
             this.label7.Size = new System.Drawing.Size(35, 12);
             this.label7.TabIndex = 4;
             this.label7.Text = "500円";
-            this.label7.Visible = false;
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
@@ -292,7 +286,6 @@
             this.label8.Size = new System.Drawing.Size(59, 16);
             this.label8.TabIndex = 3;
             this.label8.Text = "肉うどん";
-            this.label8.Visible = false;
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // button8
@@ -305,7 +298,6 @@
             this.button8.TabIndex = 1;
             this.button8.Text = "購入";
             this.button8.UseVisualStyleBackColor = false;
-            this.button8.Visible = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // panel3
@@ -330,7 +322,6 @@
             this.button28.TabIndex = 5;
             this.button28.Text = "button28";
             this.button28.UseVisualStyleBackColor = true;
-            this.button28.Visible = false;
             this.button28.Click += new System.EventHandler(this.button28_Click);
             // 
             // label5
@@ -341,7 +332,6 @@
             this.label5.Size = new System.Drawing.Size(35, 12);
             this.label5.TabIndex = 4;
             this.label5.Text = "500円";
-            this.label5.Visible = false;
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
@@ -353,7 +343,6 @@
             this.label6.Size = new System.Drawing.Size(59, 16);
             this.label6.TabIndex = 3;
             this.label6.Text = "肉うどん";
-            this.label6.Visible = false;
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // button7
@@ -366,7 +355,6 @@
             this.button7.TabIndex = 1;
             this.button7.Text = "購入";
             this.button7.UseVisualStyleBackColor = false;
-            this.button7.Visible = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // panel4
@@ -391,7 +379,6 @@
             this.button30.TabIndex = 5;
             this.button30.Text = "button30";
             this.button30.UseVisualStyleBackColor = true;
-            this.button30.Visible = false;
             this.button30.Click += new System.EventHandler(this.button30_Click);
             // 
             // label9
@@ -402,7 +389,6 @@
             this.label9.Size = new System.Drawing.Size(35, 12);
             this.label9.TabIndex = 4;
             this.label9.Text = "500円";
-            this.label9.Visible = false;
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label10
@@ -414,7 +400,6 @@
             this.label10.Size = new System.Drawing.Size(59, 16);
             this.label10.TabIndex = 3;
             this.label10.Text = "肉うどん";
-            this.label10.Visible = false;
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // button9
@@ -427,7 +412,6 @@
             this.button9.TabIndex = 1;
             this.button9.Text = "購入";
             this.button9.UseVisualStyleBackColor = false;
-            this.button9.Visible = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // panel5
@@ -451,7 +435,6 @@
             this.button32.TabIndex = 7;
             this.button32.Text = "button32";
             this.button32.UseVisualStyleBackColor = true;
-            this.button32.Visible = false;
             this.button32.Click += new System.EventHandler(this.button32_Click);
             // 
             // label13
@@ -462,7 +445,6 @@
             this.label13.Size = new System.Drawing.Size(35, 12);
             this.label13.TabIndex = 6;
             this.label13.Text = "500円";
-            this.label13.Visible = false;
             this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // label14
@@ -474,7 +456,6 @@
             this.label14.Size = new System.Drawing.Size(59, 16);
             this.label14.TabIndex = 5;
             this.label14.Text = "肉うどん";
-            this.label14.Visible = false;
             this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // button11
@@ -487,7 +468,6 @@
             this.button11.TabIndex = 1;
             this.button11.Text = "購入";
             this.button11.UseVisualStyleBackColor = false;
-            this.button11.Visible = false;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // panel6
@@ -511,7 +491,6 @@
             this.button33.TabIndex = 7;
             this.button33.Text = "button33";
             this.button33.UseVisualStyleBackColor = true;
-            this.button33.Visible = false;
             this.button33.Click += new System.EventHandler(this.button33_Click);
             // 
             // label15
@@ -522,7 +501,6 @@
             this.label15.Size = new System.Drawing.Size(35, 12);
             this.label15.TabIndex = 6;
             this.label15.Text = "500円";
-            this.label15.Visible = false;
             this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // label16
@@ -534,7 +512,6 @@
             this.label16.Size = new System.Drawing.Size(59, 16);
             this.label16.TabIndex = 5;
             this.label16.Text = "肉うどん";
-            this.label16.Visible = false;
             this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // button12
@@ -547,7 +524,6 @@
             this.button12.TabIndex = 1;
             this.button12.Text = "購入";
             this.button12.UseVisualStyleBackColor = false;
-            this.button12.Visible = false;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // panel7
@@ -573,7 +549,6 @@
             this.button34.TabIndex = 7;
             this.button34.Text = "button34";
             this.button34.UseVisualStyleBackColor = true;
-            this.button34.Visible = false;
             this.button34.Click += new System.EventHandler(this.button34_Click);
             // 
             // label17
@@ -584,7 +559,6 @@
             this.label17.Size = new System.Drawing.Size(35, 12);
             this.label17.TabIndex = 6;
             this.label17.Text = "500円";
-            this.label17.Visible = false;
             this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // label18
@@ -596,7 +570,6 @@
             this.label18.Size = new System.Drawing.Size(59, 16);
             this.label18.TabIndex = 5;
             this.label18.Text = "肉うどん";
-            this.label18.Visible = false;
             this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // button13
@@ -609,7 +582,6 @@
             this.button13.TabIndex = 1;
             this.button13.Text = "購入";
             this.button13.UseVisualStyleBackColor = false;
-            this.button13.Visible = false;
             this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // panel8
@@ -633,7 +605,6 @@
             this.button31.TabIndex = 5;
             this.button31.Text = "button31";
             this.button31.UseVisualStyleBackColor = true;
-            this.button31.Visible = false;
             this.button31.Click += new System.EventHandler(this.button31_Click);
             // 
             // label11
@@ -644,7 +615,6 @@
             this.label11.Size = new System.Drawing.Size(35, 12);
             this.label11.TabIndex = 4;
             this.label11.Text = "500円";
-            this.label11.Visible = false;
             this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label12
@@ -656,7 +626,6 @@
             this.label12.Size = new System.Drawing.Size(59, 16);
             this.label12.TabIndex = 3;
             this.label12.Text = "肉うどん";
-            this.label12.Visible = false;
             this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // button10
@@ -669,7 +638,6 @@
             this.button10.TabIndex = 1;
             this.button10.Text = "購入";
             this.button10.UseVisualStyleBackColor = false;
-            this.button10.Visible = false;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // panel9
@@ -694,7 +662,6 @@
             this.button36.TabIndex = 8;
             this.button36.Text = "button36";
             this.button36.UseVisualStyleBackColor = true;
-            this.button36.Visible = false;
             // 
             // label21
             // 
@@ -704,7 +671,6 @@
             this.label21.Size = new System.Drawing.Size(35, 12);
             this.label21.TabIndex = 7;
             this.label21.Text = "500円";
-            this.label21.Visible = false;
             // 
             // label22
             // 
@@ -715,7 +681,6 @@
             this.label22.Size = new System.Drawing.Size(59, 16);
             this.label22.TabIndex = 6;
             this.label22.Text = "肉うどん";
-            this.label22.Visible = false;
             // 
             // button16
             // 
@@ -727,7 +692,6 @@
             this.button16.TabIndex = 5;
             this.button16.Text = "購入";
             this.button16.UseVisualStyleBackColor = false;
-            this.button16.Visible = false;
             // 
             // panel10
             // 
@@ -752,7 +716,6 @@
             this.button37.TabIndex = 8;
             this.button37.Text = "button37";
             this.button37.UseVisualStyleBackColor = true;
-            this.button37.Visible = false;
             // 
             // label23
             // 
@@ -762,7 +725,6 @@
             this.label23.Size = new System.Drawing.Size(35, 12);
             this.label23.TabIndex = 7;
             this.label23.Text = "500円";
-            this.label23.Visible = false;
             // 
             // label24
             // 
@@ -773,7 +735,6 @@
             this.label24.Size = new System.Drawing.Size(59, 16);
             this.label24.TabIndex = 6;
             this.label24.Text = "肉うどん";
-            this.label24.Visible = false;
             // 
             // button17
             // 
@@ -785,7 +746,6 @@
             this.button17.TabIndex = 5;
             this.button17.Text = "購入";
             this.button17.UseVisualStyleBackColor = false;
-            this.button17.Visible = false;
             // 
             // panel11
             // 
@@ -809,7 +769,6 @@
             this.button38.TabIndex = 11;
             this.button38.Text = "button38";
             this.button38.UseVisualStyleBackColor = true;
-            this.button38.Visible = false;
             // 
             // label25
             // 
@@ -819,7 +778,6 @@
             this.label25.Size = new System.Drawing.Size(35, 12);
             this.label25.TabIndex = 10;
             this.label25.Text = "500円";
-            this.label25.Visible = false;
             // 
             // label26
             // 
@@ -830,7 +788,6 @@
             this.label26.Size = new System.Drawing.Size(59, 16);
             this.label26.TabIndex = 9;
             this.label26.Text = "肉うどん";
-            this.label26.Visible = false;
             // 
             // button18
             // 
@@ -842,7 +799,6 @@
             this.button18.TabIndex = 8;
             this.button18.Text = "購入";
             this.button18.UseVisualStyleBackColor = false;
-            this.button18.Visible = false;
             // 
             // panel12
             // 
@@ -866,7 +822,6 @@
             this.button35.TabIndex = 8;
             this.button35.Text = "button35";
             this.button35.UseVisualStyleBackColor = true;
-            this.button35.Visible = false;
             // 
             // label19
             // 
@@ -876,7 +831,6 @@
             this.label19.Size = new System.Drawing.Size(35, 12);
             this.label19.TabIndex = 7;
             this.label19.Text = "500円";
-            this.label19.Visible = false;
             // 
             // label20
             // 
@@ -887,7 +841,6 @@
             this.label20.Size = new System.Drawing.Size(59, 16);
             this.label20.TabIndex = 6;
             this.label20.Text = "肉うどん";
-            this.label20.Visible = false;
             this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
             // button15
@@ -900,7 +853,6 @@
             this.button15.TabIndex = 5;
             this.button15.Text = "購入";
             this.button15.UseVisualStyleBackColor = false;
-            this.button15.Visible = false;
             // 
             // panel13
             // 
@@ -925,7 +877,6 @@
             this.button40.TabIndex = 11;
             this.button40.Text = "button40";
             this.button40.UseVisualStyleBackColor = true;
-            this.button40.Visible = false;
             // 
             // label29
             // 
@@ -935,7 +886,6 @@
             this.label29.Size = new System.Drawing.Size(35, 12);
             this.label29.TabIndex = 10;
             this.label29.Text = "500円";
-            this.label29.Visible = false;
             // 
             // label30
             // 
@@ -946,7 +896,6 @@
             this.label30.Size = new System.Drawing.Size(59, 16);
             this.label30.TabIndex = 9;
             this.label30.Text = "肉うどん";
-            this.label30.Visible = false;
             // 
             // button20
             // 
@@ -958,7 +907,6 @@
             this.button20.TabIndex = 8;
             this.button20.Text = "購入";
             this.button20.UseVisualStyleBackColor = false;
-            this.button20.Visible = false;
             // 
             // panel14
             // 
@@ -983,7 +931,6 @@
             this.button41.TabIndex = 11;
             this.button41.Text = "button41";
             this.button41.UseVisualStyleBackColor = true;
-            this.button41.Visible = false;
             // 
             // label31
             // 
@@ -993,7 +940,6 @@
             this.label31.Size = new System.Drawing.Size(35, 12);
             this.label31.TabIndex = 10;
             this.label31.Text = "500円";
-            this.label31.Visible = false;
             // 
             // label32
             // 
@@ -1004,7 +950,6 @@
             this.label32.Size = new System.Drawing.Size(59, 16);
             this.label32.TabIndex = 9;
             this.label32.Text = "肉うどん";
-            this.label32.Visible = false;
             // 
             // button21
             // 
@@ -1016,7 +961,6 @@
             this.button21.TabIndex = 8;
             this.button21.Text = "購入";
             this.button21.UseVisualStyleBackColor = false;
-            this.button21.Visible = false;
             // 
             // panel15
             // 
@@ -1041,7 +985,6 @@
             this.button42.TabIndex = 11;
             this.button42.Text = "button42";
             this.button42.UseVisualStyleBackColor = true;
-            this.button42.Visible = false;
             // 
             // label33
             // 
@@ -1051,7 +994,6 @@
             this.label33.Size = new System.Drawing.Size(35, 12);
             this.label33.TabIndex = 10;
             this.label33.Text = "500円";
-            this.label33.Visible = false;
             // 
             // label34
             // 
@@ -1062,7 +1004,6 @@
             this.label34.Size = new System.Drawing.Size(59, 16);
             this.label34.TabIndex = 9;
             this.label34.Text = "肉うどん";
-            this.label34.Visible = false;
             // 
             // button22
             // 
@@ -1074,7 +1015,6 @@
             this.button22.TabIndex = 8;
             this.button22.Text = "購入";
             this.button22.UseVisualStyleBackColor = false;
-            this.button22.Visible = false;
             // 
             // panel17
             // 
@@ -1098,7 +1038,6 @@
             this.button44.TabIndex = 11;
             this.button44.Text = "button44";
             this.button44.UseVisualStyleBackColor = true;
-            this.button44.Visible = false;
             // 
             // label37
             // 
@@ -1108,7 +1047,6 @@
             this.label37.Size = new System.Drawing.Size(35, 12);
             this.label37.TabIndex = 10;
             this.label37.Text = "500円";
-            this.label37.Visible = false;
             // 
             // label38
             // 
@@ -1119,7 +1057,6 @@
             this.label38.Size = new System.Drawing.Size(59, 16);
             this.label38.TabIndex = 9;
             this.label38.Text = "肉うどん";
-            this.label38.Visible = false;
             // 
             // button24
             // 
@@ -1131,7 +1068,6 @@
             this.button24.TabIndex = 8;
             this.button24.Text = "購入";
             this.button24.UseVisualStyleBackColor = false;
-            this.button24.Visible = false;
             // 
             // panel18
             // 
@@ -1155,7 +1091,6 @@
             this.button45.TabIndex = 11;
             this.button45.Text = "button45";
             this.button45.UseVisualStyleBackColor = true;
-            this.button45.Visible = false;
             // 
             // label39
             // 
@@ -1165,7 +1100,6 @@
             this.label39.Size = new System.Drawing.Size(35, 12);
             this.label39.TabIndex = 10;
             this.label39.Text = "500円";
-            this.label39.Visible = false;
             // 
             // label40
             // 
@@ -1176,7 +1110,6 @@
             this.label40.Size = new System.Drawing.Size(59, 16);
             this.label40.TabIndex = 9;
             this.label40.Text = "肉うどん";
-            this.label40.Visible = false;
             // 
             // button25
             // 
@@ -1188,7 +1121,6 @@
             this.button25.TabIndex = 8;
             this.button25.Text = "購入";
             this.button25.UseVisualStyleBackColor = false;
-            this.button25.Visible = false;
             // 
             // panel19
             // 
@@ -1213,7 +1145,6 @@
             this.button46.TabIndex = 11;
             this.button46.Text = "button46";
             this.button46.UseVisualStyleBackColor = true;
-            this.button46.Visible = false;
             // 
             // label41
             // 
@@ -1223,7 +1154,6 @@
             this.label41.Size = new System.Drawing.Size(35, 12);
             this.label41.TabIndex = 10;
             this.label41.Text = "500円";
-            this.label41.Visible = false;
             // 
             // label42
             // 
@@ -1234,7 +1164,6 @@
             this.label42.Size = new System.Drawing.Size(59, 16);
             this.label42.TabIndex = 9;
             this.label42.Text = "肉うどん";
-            this.label42.Visible = false;
             // 
             // button26
             // 
@@ -1246,7 +1175,6 @@
             this.button26.TabIndex = 8;
             this.button26.Text = "購入";
             this.button26.UseVisualStyleBackColor = false;
-            this.button26.Visible = false;
             // 
             // panel20
             // 
@@ -1271,7 +1199,6 @@
             this.button43.TabIndex = 11;
             this.button43.Text = "button43";
             this.button43.UseVisualStyleBackColor = true;
-            this.button43.Visible = false;
             // 
             // label35
             // 
@@ -1281,7 +1208,6 @@
             this.label35.Size = new System.Drawing.Size(35, 12);
             this.label35.TabIndex = 10;
             this.label35.Text = "500円";
-            this.label35.Visible = false;
             // 
             // label36
             // 
@@ -1292,7 +1218,6 @@
             this.label36.Size = new System.Drawing.Size(59, 16);
             this.label36.TabIndex = 9;
             this.label36.Text = "肉うどん";
-            this.label36.Visible = false;
             // 
             // button23
             // 
@@ -1304,7 +1229,6 @@
             this.button23.TabIndex = 8;
             this.button23.Text = "購入";
             this.button23.UseVisualStyleBackColor = false;
-            this.button23.Visible = false;
             // 
             // panel16
             // 
@@ -1329,7 +1253,6 @@
             this.button39.TabIndex = 11;
             this.button39.Text = "button39";
             this.button39.UseVisualStyleBackColor = true;
-            this.button39.Visible = false;
             // 
             // label27
             // 
@@ -1339,7 +1262,6 @@
             this.label27.Size = new System.Drawing.Size(35, 12);
             this.label27.TabIndex = 10;
             this.label27.Text = "500円";
-            this.label27.Visible = false;
             // 
             // label28
             // 
@@ -1350,7 +1272,6 @@
             this.label28.Size = new System.Drawing.Size(59, 16);
             this.label28.TabIndex = 9;
             this.label28.Text = "肉うどん";
-            this.label28.Visible = false;
             // 
             // button19
             // 
@@ -1362,7 +1283,6 @@
             this.button19.TabIndex = 8;
             this.button19.Text = "購入";
             this.button19.UseVisualStyleBackColor = false;
-            this.button19.Visible = false;
             // 
             // panel21
             // 
@@ -1496,6 +1416,7 @@
             this.button5.TabIndex = 0;
             this.button5.Text = "デザート";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // panel28
             // 

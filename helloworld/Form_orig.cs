@@ -34,7 +34,6 @@ namespace helloworld
         public Form_orig()
         {
             InitializeComponent();
-            start_log();
         }
 
         protected void log(object cur_form, object cur_button, EventArgs e)

@@ -33,6 +33,7 @@ namespace helloworld
         public MainForm()
         {
             InitializeComponent();
+            start_log();
             menu_manager = new myMenuManager();
             menu_list = new ArrayList();
             purchase_list = new ArrayList();
@@ -69,12 +70,159 @@ namespace helloworld
             {
                 setNoodleMenu(i);
             }
+            //for (int i = RAMEN_FLAG_ID; i <= 25; i++)
+            //{
+            //    setNoodleMenu(i);
+            //}
+            //setNoodleMenu(75);
+        }
+
+        private void button1_Click(object sender, EventArgs e) //麺類タブ
+        {
+            this.invisibleAllMenu();
+            for (int i = UDON_FLAG_ID; i <= 10; i++)
+            {
+                setNoodleMenu(i);
+            }
             for (int i = RAMEN_FLAG_ID; i <= 25; i++)
             {
                 setNoodleMenu(i);
             }
-            setNoodleMenu(75);
+            setNoodleMenu(75); //焼きそばのため
         }
+
+        private void button2_Click(object sender, EventArgs e) //ご飯類タブ
+        {
+            this.log(this, sender, e);
+            this.invisibleAllMenu();
+            for (int i = RICE_FLAG_ID; i <= 54; i += 3)
+            {
+                setRiceMenu(i);
+            }
+            setRiceMenu(98); //ご飯のため
+        }
+
+        private void button3_Click(object sender, EventArgs e) //サイドメニュータブ
+        {
+            this.log(this, sender, e);
+            this.invisibleAllMenu();
+            for (int i = SIDE_DISH_FLAG_ID; i <= 74; i++) //56はから揚げ(中)のid
+            {
+                setSideDishMenu(i);
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e) //小鉢料理/汁物タブ
+        {
+            this.log(this, sender, e);
+            this.invisibleAllMenu();
+            for (int i = SMALL_BOWL_FLAG_ID; i <= 90; i++)
+            {
+                setSmallBowlMenu(i);
+            }
+            for (int i = SOUP_FLAG_ID; i <= 96; i++)
+            {
+                setSmallBowlMenu(i);
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e) //デザートタブ
+        {
+            this.log(this, sender, e);
+            this.invisibleAllMenu();
+            for (int i = DESSERT_FLAG_ID; i <= 94; i++) {
+                setDessertMenu(i);
+            }
+        }
+
+        private void invisibleAllMenu()
+        {
+            for (int i = 0; i < GRID_NUM; i++)
+            {
+                menu_panel[i].Visible = false;
+            }
+        }
+
+        private void addToPurchaseDisplay()
+        {
+
+        }
+
+        private void setNoodleMenu(int id)
+        {
+            if (id != 75)
+            {
+                int j = id <= 10 ? id - UDON_FLAG_ID : id - RAMEN_FLAG_ID + 11;
+
+                string menu_name = menu_manager.getNameById(id);
+                this.menu_panel[j].Visible = true;
+                this.menu_name_label[j].Text = menu_name;
+                this.menu_price_label[j].Text = (menu_manager.getPrice(menu_name)).ToString();
+                if (this.menu_manager.canChangeSoba(id))
+                {
+                    this.change_button[j].Visible = true;
+                    this.change_button[j].Text = "そばに変更";
+                }
+            }
+            else
+            { //焼きそばのため
+                string menu_name = menu_manager.getNameById(75);
+                this.menu_panel[16].Visible = true;
+                this.menu_name_label[16].Text = menu_name;
+                this.menu_price_label[16].Text = (menu_manager.getPrice(menu_name)).ToString();
+            }
+        }
+
+        private void setRiceMenu(int id)
+        {
+            int j = id <= 54 ? id - RICE_FLAG_ID : 11;
+            string menu_name = menu_manager.getNameById(id);
+            j = (id - RICE_FLAG_ID) / 3;
+            this.menu_panel[j].Visible = true;
+            this.menu_name_label[j].Text = menu_name;
+            this.menu_price_label[j].Text = (menu_manager.getPrice(menu_name)).ToString();
+            if (this.menu_manager.canChangeSize(id))
+            {
+                this.change_button[j].Visible = true;
+                this.change_button[j].Text = "サイズを変更";
+            }
+        }
+
+        private void setSideDishMenu(int id)
+        {
+            int j = id - SIDE_DISH_FLAG_ID;
+            if (id != 57 && id != 70 && id != 72 && id != 74)
+            {
+                string menu_name = menu_manager.getNameById(id);
+                this.menu_panel[j].Visible = true;
+                this.menu_name_label[j].Text = menu_name;
+                this.menu_price_label[j].Text = (menu_manager.getPrice(menu_name)).ToString();
+                if (this.menu_manager.canChangeSize(id))
+                {
+                    this.change_button[j].Visible = true;
+                    this.change_button[j].Text = "サイズを変更";
+                }
+            }
+        }
+
+        private void setSmallBowlMenu(int id)
+        {
+            int j = id <= 90 ? id - SMALL_BOWL_FLAG_ID : id - SOUP_FLAG_ID + 16;
+            string menu_name = menu_manager.getNameById(id);
+            this.menu_panel[j].Visible = true;
+            this.menu_name_label[j].Text = menu_name;
+            this.menu_price_label[j].Text = (menu_manager.getPrice(menu_name)).ToString();
+        }
+
+        private void setDessertMenu(int id)
+        {
+            int j = id - DESSERT_FLAG_ID;
+            string menu_name = menu_manager.getNameById(id);
+            this.menu_panel[j].Visible = true;
+            this.menu_name_label[j].Text = menu_name;
+            this.menu_price_label[j].Text = (menu_manager.getPrice(menu_name)).ToString();
+        }
+
 
         private void listBox10_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -367,140 +515,6 @@ namespace helloworld
 
         }
 
-        private void button1_Click(object sender, EventArgs e) //麺類タブ
-        {
-            this.invisibleAllMenu();
-            for (int i = UDON_FLAG_ID; i <= 10; i++)
-            {
-                setNoodleMenu(i);
-            }
-            for (int i = RAMEN_FLAG_ID; i <= 25; i++)
-            {
-                setNoodleMenu(i);
-            }
-            setNoodleMenu(75); //焼きそばのため
-        }
-
-        private void button2_Click(object sender, EventArgs e) //ご飯類タブ
-        {
-            this.log(this, sender, e);
-            this.invisibleAllMenu();
-            for (int i = RICE_FLAG_ID; i <= 54; i += 3)
-            {
-                setRiceMenu(i);
-            }
-            setRiceMenu(98); //ご飯のため
-        }
-
-        private void button3_Click(object sender, EventArgs e) //サイドメニュータブ
-        {
-            this.log(this, sender, e);
-            this.invisibleAllMenu();
-            for (int i = SIDE_DISH_FLAG_ID; i <= 74; i++) //56はから揚げ(中)のid
-            {
-                setSideDishMenu(i);
-            }
-        }
-
-        private void button4_Click(object sender, EventArgs e) //小鉢料理/汁物タブ
-        {
-            this.log(this, sender, e);
-            this.invisibleAllMenu();
-            for (int i = SMALL_BOWL_FLAG_ID; i <= 90; i++)
-            {
-                setSmallBowlMenu(i);
-            }
-            for (int i = SOUP_FLAG_ID; i <= 96; i++)
-            {
-                setSmallBowlMenu(i);
-            }
-        }
-
-        private void invisibleAllMenu()
-        {
-            for (int i = 0; i < GRID_NUM; i++)
-            {
-                menu_panel[i].Visible = false;
-            }
-        }
-
-        private void addToPurchaseDisplay(){
-            
-        }
-
-        private void setNoodleMenu(int id)
-        {
-            if (id != 75)
-            {
-                int j = id <= 10 ? id - UDON_FLAG_ID : id - RAMEN_FLAG_ID + 11;
-
-                string menu_name = menu_manager.getNameById(id);
-                this.menu_panel[j].Visible = true;
-                this.menu_name_label[j].Text = menu_name;
-                this.menu_price_label[j].Text = (menu_manager.getPrice(menu_name)).ToString();
-                if (this.menu_manager.canChangeSoba(id))
-                {
-                    this.change_button[j].Visible = true;
-                    this.change_button[j].Text = "そばに変更";
-                }
-            }
-            else
-            { //焼きそばのため
-                string menu_name = menu_manager.getNameById(75);
-                this.menu_panel[16].Visible = true;
-                this.menu_name_label[16].Text = menu_name;
-                this.menu_price_label[16].Text = (menu_manager.getPrice(menu_name)).ToString();
-            }
-        }
-
-        private void setRiceMenu(int id)
-        {
-            int j = id <= 54 ? id - RICE_FLAG_ID : 11;
-            string menu_name = menu_manager.getNameById(id);
-            j = (id - RICE_FLAG_ID) / 3;
-            this.menu_panel[j].Visible = true;
-            this.menu_name_label[j].Text = menu_name;
-            this.menu_price_label[j].Text = (menu_manager.getPrice(menu_name)).ToString();
-            if (this.menu_manager.canChangeSize(id))
-            {
-                this.change_button[j].Visible = true;
-                this.change_button[j].Text = "サイズを変更";
-            }
-        }
-
-        private void setSideDishMenu(int id)
-        {
-            int j = id - SIDE_DISH_FLAG_ID;
-            if (id != 57 && id != 70 && id != 72 && id != 74)
-            {
-                string menu_name = menu_manager.getNameById(id);
-                this.menu_panel[j].Visible = true;
-                this.menu_name_label[j].Text = menu_name;
-                this.menu_price_label[j].Text = (menu_manager.getPrice(menu_name)).ToString();
-                if (this.menu_manager.canChangeSize(id))
-                {
-                    this.change_button[j].Visible = true;
-                    this.change_button[j].Text = "サイズを変更";
-                }
-            }
-        }
-
-        private void setSmallBowlMenu(int id)
-        {
-            int j = id <= 90 ? id - SMALL_BOWL_FLAG_ID : id - SOUP_FLAG_ID + 16;
-            string menu_name = menu_manager.getNameById(id);
-            this.menu_panel[j].Visible = true;
-            this.menu_name_label[j].Text = menu_name;
-            this.menu_price_label[j].Text = (menu_manager.getPrice(menu_name)).ToString();
-        }
-
-        private void setDessertMenu(int id)
-        {
-            int j = id - DESSERT_FLAG_ID;
-            string menu_name = menu_manager.getNameById(id);
-            this.menu_panel[j].Visible = true;
-            this.menu_name_label[j].Text = menu_name;
-            this.menu_price_label[j].Text = (menu_manager.getPrice(menu_name)).ToString();
-        }
+       
     }
 }
