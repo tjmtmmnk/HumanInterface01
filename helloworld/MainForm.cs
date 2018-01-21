@@ -153,8 +153,9 @@ namespace helloworld
             if (id != 75)
             {
                 int j = id <= 10 ? id - UDON_FLAG_ID : id - RAMEN_FLAG_ID + 11;
-
+                Console.WriteLine("id " + id);
                 string menu_name = menu_manager.getNameById(id);
+                Console.WriteLine(menu_name);
                 this.menu_panel[j].Visible = true;
                 this.menu_name_label[j].Text = menu_name;
                 this.menu_price_label[j].Text = (menu_manager.getPrice(menu_name)).ToString();

@@ -102,18 +102,22 @@ namespace helloworld
 
         public string getNameById(int id)
         {
-            Menu temp_menu = new Menu();
+            Menu tempMenu = new Menu();
+            tempMenu.id = 0;
+            tempMenu.name = "";
+            tempMenu.price = 0;
             for (int i = 0; i < menuList.Count; i++)
             {
-                if (id == temp_menu.id) break;
+                tempMenu = (Menu)menuList[i];
+                if (id == tempMenu.id) break;
                 else if (i == menuList.Count - 1)
                 {
-                    temp_menu.id = 0;
-                    temp_menu.name = "";
-                    temp_menu.price = 0;
+                    tempMenu.id = 0;
+                    tempMenu.name = "";
+                    tempMenu.price = 0;
                 }
             }
-            return temp_menu.name;
+            return tempMenu.name;
         }
 
         public int getId(string name)
