@@ -1,0 +1,15 @@
+Application, Window Text, Action Object, Object Text, Time(1 = 100 nanosec)
+helloworld.Form1, Text: 実験開始, System.Windows.Forms.Button, Text: 実験を開始する, 346669829
+helloworld.insertMoney, Text: お金を入れる, System.Windows.Forms.Button, Text: 100, 355280321
+helloworld.insertMoney, Text: お金を入れる, System.Windows.Forms.Button, Text: 500, 357600454
+helloworld.insertMoney, Text: お金を入れる, System.Windows.Forms.Button, Text: 500, 359270549
+helloworld.insertMoney, Text: お金を入れる, System.Windows.Forms.Button, Text: 食券を選ぶ, 362640742
+helloworld.insertMoney, Text: お金を入れる, System.Windows.Forms.Button, Text: 食券を選ぶ, 367441017
+helloworld.insertMoney, Text: お金を入れる, System.Windows.Forms.Button, Text: 食券を選ぶ, 369121113
+helloworld.insertMoney, Text: お金を入れる, System.Windows.Forms.Button, Text: 食券を選ぶ, 371041223
+helloworld.insertMoney, Text: お金を入れる, System.Windows.Forms.Button, Text: 食券を選ぶ, 512559317
+helloworld.insertMoney, Text: お金を入れる, System.Windows.Forms.Button, Text: 食券を選ぶ, 518399651
+helloworld.insertMoney, Text: お金を入れる, System.Windows.Forms.Button, Text: 食券を選ぶ, 520399765
+helloworld.insertMoney, Text: お金を入れる, System.Windows.Forms.Button, Text: 100, 525990085
+helloworld.insertMoney, Text: お金を入れる, System.Windows.Forms.Button, Text: 購入をやめる, 618735390
+helloworld.formEnd, Text: 購入結果, System.Windows.Forms.Button, Text: 終了する, 626155814

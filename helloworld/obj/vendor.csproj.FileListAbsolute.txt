@@ -1,0 +1,2 @@
+F:\vendor\vendor\helloworld\obj\Debug\helloworld.exe
+F:\vendor\vendor\helloworld\obj\Debug\helloworld.pdb

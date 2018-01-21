@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="vendor">
+</Property><Property Name="ソリューション ファイル" Value="C:\Users\Public\Downloads\vendor\vendor\vendor.sln">
+</Property><Property Name="ユーザー オプション ファイル" Value="C:\Users\Public\Downloads\vendor\vendor\vendor.suo">
+</Property><Property Name="Date" Value="2011年6月15日">
+</Property><Property Name="Time" Value="11:10">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="vendor.sln" Description="ファイルは正常に C:\Users\Public\Downloads\vendor\vendor\Backup\vendor.sln としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="" Source="vendor.suo" Description="ファイルは正常に C:\Users\Public\Downloads\vendor\vendor\Backup\vendor.suo としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="vendor" Source="helloworld\vendor.csproj" Description="プロジェクト ファイルは正常に C:\Users\Public\Downloads\vendor\vendor\Backup\helloworld\vendor.csproj としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="vendor" Source="helloworld\vendor.csproj.user" Description="プロジェクト ユーザー ファイルは正常に C:\Users\Public\Downloads\vendor\vendor\Backup\helloworld\vendor.csproj.user としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="vendor" Source="helloworld\Form1.cs" Description="ファイルは正常に C:\Users\Public\Downloads\vendor\vendor\Backup\helloworld\Form1.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="vendor" Source="helloworld\Form1.Designer.cs" Description="ファイルは正常に C:\Users\Public\Downloads\vendor\vendor\Backup\helloworld\Form1.Designer.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="vendor" Source="helloworld\Form2.cs" Description="ファイルは正常に C:\Users\Public\Downloads\vendor\vendor\Backup\helloworld\Form2.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="vendor" Source="helloworld\Form2.Designer.cs" Description="ファイルは正常に C:\Users\Public\Downloads\vendor\vendor\Backup\helloworld\Form2.Designer.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="vendor" Source="helloworld\Form3.cs" Description="ファイルは正常に C:\Users\Public\Downloads\vendor\vendor\Backup\helloworld\Form3.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="vendor" Source="helloworld\Form3.Designer.cs" Description="ファイルは正常に C:\Users\Public\Downloads\vendor\vendor\Backup\helloworld\Form3.Designer.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="vendor" Source="helloworld\Form_orig.cs" Description="ファイルは正常に C:\Users\Public\Downloads\vendor\vendor\Backup\helloworld\Form_orig.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="vendor" Source="helloworld\Form_orig.Designer.cs" Description="ファイルは正常に C:\Users\Public\Downloads\vendor\vendor\Backup\helloworld\Form_orig.Designer.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="vendor" Source="helloworld\log.cs" Description="ファイルは正常に C:\Users\Public\Downloads\vendor\vendor\Backup\helloworld\log.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="vendor" Source="helloworld\Program.cs" Description="ファイルは正常に C:\Users\Public\Downloads\vendor\vendor\Backup\helloworld\Program.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="vendor" Source="helloworld\Properties\AssemblyInfo.cs" Description="ファイルは正常に C:\Users\Public\Downloads\vendor\vendor\Backup\helloworld\Properties\AssemblyInfo.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="vendor" Source="helloworld\Properties\Resources.Designer.cs" Description="ファイルは正常に C:\Users\Public\Downloads\vendor\vendor\Backup\helloworld\Properties\Resources.Designer.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="vendor" Source="helloworld\Properties\Settings.Designer.cs" Description="ファイルは正常に C:\Users\Public\Downloads\vendor\vendor\Backup\helloworld\Properties\Settings.Designer.cs としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="vendor" Source="helloworld\Properties\Settings.settings" Description="ファイルは正常に C:\Users\Public\Downloads\vendor\vendor\Backup\helloworld\Properties\Settings.settings としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="vendor" Source="helloworld\Form1.resx" Description="ファイルは正常に C:\Users\Public\Downloads\vendor\vendor\Backup\helloworld\Form1.resx としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="vendor" Source="helloworld\Form2.resx" Description="ファイルは正常に C:\Users\Public\Downloads\vendor\vendor\Backup\helloworld\Form2.resx としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="vendor" Source="helloworld\Form3.resx" Description="ファイルは正常に C:\Users\Public\Downloads\vendor\vendor\Backup\helloworld\Form3.resx としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="vendor" Source="helloworld\Form_orig.resx" Description="ファイルは正常に C:\Users\Public\Downloads\vendor\vendor\Backup\helloworld\Form_orig.resx としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="vendor" Source="helloworld\Properties\Resources.resx" Description="ファイルは正常に C:\Users\Public\Downloads\vendor\vendor\Backup\helloworld\Properties\Resources.resx としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="vendor" Source="helloworld\Properties\app.manifest" Description="ファイルは正常に C:\Users\Public\Downloads\vendor\vendor\Backup\helloworld\Properties\app.manifest としてバックアップされました。">
+</Event><Event ErrorLevel="0" Project="vendor" Source="helloworld\vendor.csproj" Description="プロジェクトは正常に変換されました。">
+</Event><Event ErrorLevel="3" Project="vendor" Source="helloworld\vendor.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="vendor.sln" Description="ソリューションは正常に変換されました">
+</Event><Event ErrorLevel="3" Project="" Source="vendor.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="vendor" Source="helloworld\vendor.csproj" Description="スキャンが完了しました: プロジェクト ファイルにアップグレードは必要ありません。">
+</Event></UpgradeLog>

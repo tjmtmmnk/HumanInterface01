@@ -28,12 +28,14 @@ namespace helloworld
         private Panel[] menu_panel = new Panel[GRID_NUM];
         private myMenuManager menu_manager;
         private ArrayList menu_list;
+        private ArrayList purchase_list;
 
         public MainForm()
         {
             InitializeComponent();
             menu_manager = new myMenuManager();
             menu_list = new ArrayList();
+            purchase_list = new ArrayList();
             menu_manager.makeMenuList("menu.csv");
             menu_list = menu_manager.getMenuList();
 
@@ -420,6 +422,10 @@ namespace helloworld
             {
                 menu_panel[i].Visible = false;
             }
+        }
+
+        private void addToPurchaseDisplay(){
+            
         }
 
         private void setNoodleMenu(int id)

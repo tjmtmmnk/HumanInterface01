@@ -1,0 +1,176 @@
+C:\Users\Public\Downloads\vendor\vendor\helloworld\obj\Debug\helloworld.exe
+C:\Users\Public\Downloads\vendor\vendor\helloworld\obj\Debug\helloworld.pdb
+C:\Users\Public\Downloads\vendor\vendor\helloworld\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Public\Downloads\vendor\vendor\helloworld\obj\Debug\helloworld.Form1.resources
+C:\Users\Public\Downloads\vendor\vendor\helloworld\obj\Debug\helloworld.Form2.resources
+C:\Users\Public\Downloads\vendor\vendor\helloworld\obj\Debug\helloworld.Form3.resources
+C:\Users\Public\Downloads\vendor\vendor\helloworld\obj\Debug\helloworld.Form_orig.resources
+C:\Users\Public\Downloads\vendor\vendor\helloworld\obj\Debug\helloworld.Properties.Resources.resources
+C:\Users\Public\Downloads\vendor\vendor\helloworld\obj\Debug\vendor.csproj.GenerateResource.Cache
+C:\Users\Public\Downloads\vendor\vendor\helloworld\bin\Debug\helloworld.exe.manifest
+C:\Users\Public\Downloads\vendor\vendor\helloworld\bin\Debug\helloworld.application
+C:\Users\Public\Downloads\vendor\vendor\helloworld\bin\Debug\helloworld.exe
+C:\Users\Public\Downloads\vendor\vendor\helloworld\bin\Debug\helloworld.pdb
+C:\Users\Public\Downloads\vendor\vendor\helloworld\obj\Debug\helloworld.TrustInfo.xml
+C:\Users\Public\Downloads\vendor\vendor\helloworld\obj\Debug\helloworld.exe.manifest
+C:\Users\Public\Downloads\vendor\vendor\helloworld\obj\Debug\helloworld.application
+C:\Users\Public\Downloads\vendor\vendor\helloworld\obj\Debug\helloworld.insertMoney.resources
+C:\Users\Public\Downloads\vendor\vendor\helloworld\obj\Debug\helloworld.formEnd.resources
+C:\Users\Public\Downloads\vendor\vendor\helloworld\obj\Debug\helloworld.selectMenu.resources
+C:\Documents and Settings\joe\デスクトップ\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.exe
+C:\Documents and Settings\joe\デスクトップ\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.pdb
+C:\Documents and Settings\joe\デスクトップ\インタフェースプロトタイプ\vendor\vendor\helloworld\bin\Debug\helloworld.exe.manifest
+C:\Documents and Settings\joe\デスクトップ\インタフェースプロトタイプ\vendor\vendor\helloworld\bin\Debug\helloworld.application
+C:\Documents and Settings\joe\デスクトップ\インタフェースプロトタイプ\vendor\vendor\helloworld\bin\Debug\helloworld.exe
+C:\Documents and Settings\joe\デスクトップ\インタフェースプロトタイプ\vendor\vendor\helloworld\bin\Debug\helloworld.pdb
+C:\Documents and Settings\joe\デスクトップ\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\joe\デスクトップ\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.Form1.resources
+C:\Documents and Settings\joe\デスクトップ\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.Form2.resources
+C:\Documents and Settings\joe\デスクトップ\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.Form3.resources
+C:\Documents and Settings\joe\デスクトップ\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.formEnd.resources
+C:\Documents and Settings\joe\デスクトップ\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.Form_orig.resources
+C:\Documents and Settings\joe\デスクトップ\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.insertMoney.resources
+C:\Documents and Settings\joe\デスクトップ\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.Properties.Resources.resources
+C:\Documents and Settings\joe\デスクトップ\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.selectMenu.resources
+C:\Documents and Settings\joe\デスクトップ\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\vendor.csproj.GenerateResource.Cache
+C:\Documents and Settings\joe\デスクトップ\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.TrustInfo.xml
+C:\Documents and Settings\joe\デスクトップ\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.exe.manifest
+C:\Documents and Settings\joe\デスクトップ\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.application
+C:\Users\実験用\Desktop\インタフェースプロトタイプb\vendor\vendor\helloworld\obj\Debug\helloworld.exe
+C:\Users\実験用\Desktop\インタフェースプロトタイプb\vendor\vendor\helloworld\obj\Debug\helloworld.pdb
+C:\Users\実験用\Desktop\インタフェースプロトタイプb\vendor\vendor\helloworld\bin\Debug\helloworld.exe.manifest
+C:\Users\実験用\Desktop\インタフェースプロトタイプb\vendor\vendor\helloworld\bin\Debug\helloworld.application
+C:\Users\実験用\Desktop\インタフェースプロトタイプb\vendor\vendor\helloworld\bin\Debug\helloworld.exe
+C:\Users\実験用\Desktop\インタフェースプロトタイプb\vendor\vendor\helloworld\bin\Debug\helloworld.pdb
+C:\Users\実験用\Desktop\インタフェースプロトタイプb\vendor\vendor\helloworld\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\実験用\Desktop\インタフェースプロトタイプb\vendor\vendor\helloworld\obj\Debug\helloworld.Form1.resources
+C:\Users\実験用\Desktop\インタフェースプロトタイプb\vendor\vendor\helloworld\obj\Debug\helloworld.Form2.resources
+C:\Users\実験用\Desktop\インタフェースプロトタイプb\vendor\vendor\helloworld\obj\Debug\helloworld.Form3.resources
+C:\Users\実験用\Desktop\インタフェースプロトタイプb\vendor\vendor\helloworld\obj\Debug\helloworld.formEnd.resources
+C:\Users\実験用\Desktop\インタフェースプロトタイプb\vendor\vendor\helloworld\obj\Debug\helloworld.Form_orig.resources
+C:\Users\実験用\Desktop\インタフェースプロトタイプb\vendor\vendor\helloworld\obj\Debug\helloworld.insertMoney.resources
+C:\Users\実験用\Desktop\インタフェースプロトタイプb\vendor\vendor\helloworld\obj\Debug\helloworld.Properties.Resources.resources
+C:\Users\実験用\Desktop\インタフェースプロトタイプb\vendor\vendor\helloworld\obj\Debug\helloworld.selectMenu.resources
+C:\Users\実験用\Desktop\インタフェースプロトタイプb\vendor\vendor\helloworld\obj\Debug\vendor.csproj.GenerateResource.Cache
+C:\Users\実験用\Desktop\インタフェースプロトタイプb\vendor\vendor\helloworld\obj\Debug\helloworld.TrustInfo.xml
+C:\Users\実験用\Desktop\インタフェースプロトタイプb\vendor\vendor\helloworld\obj\Debug\helloworld.exe.manifest
+C:\Users\実験用\Desktop\インタフェースプロトタイプb\vendor\vendor\helloworld\obj\Debug\helloworld.application
+C:\Users\実験用\Dropbox\M1\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.exe
+C:\Users\実験用\Dropbox\M1\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.pdb
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\M1\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.exe
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\M1\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.pdb
+C:\Documents and Settings\joe\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.exe
+C:\Documents and Settings\joe\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.pdb
+C:\Documents and Settings\joe\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\bin\Debug\helloworld.exe.manifest
+C:\Documents and Settings\joe\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\bin\Debug\helloworld.application
+C:\Documents and Settings\joe\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\bin\Debug\helloworld.exe
+C:\Documents and Settings\joe\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\bin\Debug\helloworld.pdb
+C:\Documents and Settings\joe\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\joe\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.Form1.resources
+C:\Documents and Settings\joe\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.Form2.resources
+C:\Documents and Settings\joe\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.Form3.resources
+C:\Documents and Settings\joe\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.formEnd.resources
+C:\Documents and Settings\joe\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.Form_orig.resources
+C:\Documents and Settings\joe\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.insertMoney.resources
+C:\Documents and Settings\joe\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.Properties.Resources.resources
+C:\Documents and Settings\joe\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.selectMenu.resources
+C:\Documents and Settings\joe\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\vendor.csproj.GenerateResource.Cache
+C:\Documents and Settings\joe\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.TrustInfo.xml
+C:\Documents and Settings\joe\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.exe.manifest
+C:\Documents and Settings\joe\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.application
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\bin\Debug\helloworld.exe.manifest
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\bin\Debug\helloworld.application
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\bin\Debug\helloworld.exe
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\bin\Debug\helloworld.pdb
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.Form1.resources
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.Form2.resources
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.Form3.resources
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.formEnd.resources
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.Form_orig.resources
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.insertMoney.resources
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.Properties.Resources.resources
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.selectMenu.resources
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\vendor.csproj.GenerateResource.Cache
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.TrustInfo.xml
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.exe.manifest
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.application
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.exe
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor\vendor\helloworld\obj\Debug\helloworld.pdb
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor_b\vendor\helloworld\obj\Debug\helloworld.exe
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor_b\vendor\helloworld\obj\Debug\helloworld.pdb
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor_b\vendor\helloworld\bin\Debug\helloworld.exe.manifest
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor_b\vendor\helloworld\bin\Debug\helloworld.application
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor_b\vendor\helloworld\bin\Debug\helloworld.exe
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor_b\vendor\helloworld\bin\Debug\helloworld.pdb
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor_b\vendor\helloworld\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor_b\vendor\helloworld\obj\Debug\helloworld.Form1.resources
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor_b\vendor\helloworld\obj\Debug\helloworld.Form2.resources
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor_b\vendor\helloworld\obj\Debug\helloworld.Form3.resources
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor_b\vendor\helloworld\obj\Debug\helloworld.formEnd.resources
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor_b\vendor\helloworld\obj\Debug\helloworld.Form_orig.resources
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor_b\vendor\helloworld\obj\Debug\helloworld.insertMoney.resources
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor_b\vendor\helloworld\obj\Debug\helloworld.Properties.Resources.resources
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor_b\vendor\helloworld\obj\Debug\helloworld.selectMenu.resources
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor_b\vendor\helloworld\obj\Debug\vendor.csproj.GenerateResource.Cache
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor_b\vendor\helloworld\obj\Debug\helloworld.TrustInfo.xml
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor_b\vendor\helloworld\obj\Debug\helloworld.exe.manifest
+C:\Documents and Settings\ishibashi\My Documents\My Dropbox\インタフェースプロトタイプ\vendor_b\vendor\helloworld\obj\Debug\helloworld.application
+C:\Users\Matsuura\Dropbox\M1\インタフェースプロトタイプ\vender_brank\vendor\helloworld\obj\Debug\helloworld.exe
+C:\Users\Matsuura\Dropbox\M1\インタフェースプロトタイプ\vender_brank\vendor\helloworld\obj\Debug\helloworld.pdb
+C:\Users\Matsuura\Dropbox\M1\インタフェースプロトタイプ\vender_brank\vendor\helloworld\bin\Debug\helloworld.exe.manifest
+C:\Users\Matsuura\Dropbox\M1\インタフェースプロトタイプ\vender_brank\vendor\helloworld\bin\Debug\helloworld.application
+C:\Users\Matsuura\Dropbox\M1\インタフェースプロトタイプ\vender_brank\vendor\helloworld\bin\Debug\helloworld.exe
+C:\Users\Matsuura\Dropbox\M1\インタフェースプロトタイプ\vender_brank\vendor\helloworld\bin\Debug\helloworld.pdb
+C:\Users\Matsuura\Dropbox\M1\インタフェースプロトタイプ\vender_brank\vendor\helloworld\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Matsuura\Dropbox\M1\インタフェースプロトタイプ\vender_brank\vendor\helloworld\obj\Debug\helloworld.Form1.resources
+C:\Users\Matsuura\Dropbox\M1\インタフェースプロトタイプ\vender_brank\vendor\helloworld\obj\Debug\helloworld.Form2.resources
+C:\Users\Matsuura\Dropbox\M1\インタフェースプロトタイプ\vender_brank\vendor\helloworld\obj\Debug\helloworld.Form3.resources
+C:\Users\Matsuura\Dropbox\M1\インタフェースプロトタイプ\vender_brank\vendor\helloworld\obj\Debug\helloworld.formEnd.resources
+C:\Users\Matsuura\Dropbox\M1\インタフェースプロトタイプ\vender_brank\vendor\helloworld\obj\Debug\helloworld.Form_orig.resources
+C:\Users\Matsuura\Dropbox\M1\インタフェースプロトタイプ\vender_brank\vendor\helloworld\obj\Debug\helloworld.insertMoney.resources
+C:\Users\Matsuura\Dropbox\M1\インタフェースプロトタイプ\vender_brank\vendor\helloworld\obj\Debug\helloworld.Properties.Resources.resources
+C:\Users\Matsuura\Dropbox\M1\インタフェースプロトタイプ\vender_brank\vendor\helloworld\obj\Debug\vendor.csproj.GenerateResource.Cache
+C:\Users\Matsuura\Dropbox\M1\インタフェースプロトタイプ\vender_brank\vendor\helloworld\obj\Debug\helloworld.TrustInfo.xml
+C:\Users\Matsuura\Dropbox\M1\インタフェースプロトタイプ\vender_brank\vendor\helloworld\obj\Debug\helloworld.exe.manifest
+C:\Users\Matsuura\Dropbox\M1\インタフェースプロトタイプ\vender_brank\vendor\helloworld\obj\Debug\helloworld.application
+C:\Users\hi-kiso\Desktop\インタフェースプロトタイプ\インタフェースプロトタイプ\vender_brank\vendor\helloworld\obj\Debug\helloworld.exe
+C:\Users\hi-kiso\Desktop\インタフェースプロトタイプ\インタフェースプロトタイプ\vender_brank\vendor\helloworld\obj\Debug\helloworld.pdb
+Z:\Desktop\vender_brank\vendor\helloworld\obj\Debug\helloworld.exe
+Z:\Desktop\vender_brank\vendor\helloworld\obj\Debug\helloworld.pdb
+Z:\Desktop\vender_brank\vendor\helloworld\bin\Debug\helloworld.exe.manifest
+Z:\Desktop\vender_brank\vendor\helloworld\bin\Debug\helloworld.application
+Z:\Desktop\vender_brank\vendor\helloworld\bin\Debug\helloworld.exe
+Z:\Desktop\vender_brank\vendor\helloworld\bin\Debug\helloworld.pdb
+Z:\Desktop\vender_brank\vendor\helloworld\obj\Debug\vendor.csprojResolveAssemblyReference.cache
+Z:\Desktop\vender_brank\vendor\helloworld\obj\Debug\helloworld.Form1.resources
+Z:\Desktop\vender_brank\vendor\helloworld\obj\Debug\helloworld.Form2.resources
+Z:\Desktop\vender_brank\vendor\helloworld\obj\Debug\helloworld.Form3.resources
+Z:\Desktop\vender_brank\vendor\helloworld\obj\Debug\helloworld.formEnd.resources
+Z:\Desktop\vender_brank\vendor\helloworld\obj\Debug\helloworld.Form_orig.resources
+Z:\Desktop\vender_brank\vendor\helloworld\obj\Debug\helloworld.insertMoney.resources
+Z:\Desktop\vender_brank\vendor\helloworld\obj\Debug\helloworld.Properties.Resources.resources
+Z:\Desktop\vender_brank\vendor\helloworld\obj\Debug\vendor.csproj.GenerateResource.Cache
+Z:\Desktop\vender_brank\vendor\helloworld\obj\Debug\helloworld.TrustInfo.xml
+Z:\Desktop\vender_brank\vendor\helloworld\obj\Debug\helloworld.exe.manifest
+Z:\Desktop\vender_brank\vendor\helloworld\obj\Debug\helloworld.application
+z:\Desktop\vender_brank\vendor\helloworld\obj\Debug\helloworld.MainForm.resources
+F:\vendor\helloworld\obj\Debug\helloworld.exe
+F:\vendor\helloworld\obj\Debug\helloworld.pdb
+F:\vendor\helloworld\bin\Debug\helloworld.exe.manifest
+F:\vendor\helloworld\bin\Debug\helloworld.application
+F:\vendor\helloworld\bin\Debug\helloworld.exe
+F:\vendor\helloworld\bin\Debug\helloworld.pdb
+F:\vendor\helloworld\obj\Debug\vendor.csprojResolveAssemblyReference.cache
+F:\vendor\helloworld\obj\Debug\helloworld.Form1.resources
+F:\vendor\helloworld\obj\Debug\helloworld.Form2.resources
+F:\vendor\helloworld\obj\Debug\helloworld.Form3.resources
+F:\vendor\helloworld\obj\Debug\helloworld.formEnd.resources
+F:\vendor\helloworld\obj\Debug\helloworld.Form_orig.resources
+F:\vendor\helloworld\obj\Debug\helloworld.insertMoney.resources
+F:\vendor\helloworld\obj\Debug\helloworld.MainForm.resources
+F:\vendor\helloworld\obj\Debug\helloworld.Properties.Resources.resources
+F:\vendor\helloworld\obj\Debug\vendor.csproj.GenerateResource.Cache
+F:\vendor\helloworld\obj\Debug\helloworld.TrustInfo.xml
+F:\vendor\helloworld\obj\Debug\helloworld.exe.manifest
+F:\vendor\helloworld\obj\Debug\helloworld.application
