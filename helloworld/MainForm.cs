@@ -22,13 +22,15 @@ namespace helloworld
 
         private const int GRID_NUM = 20;
 
-        private Button[] change_button = new Button[GRID_NUM];
-        private Label[] menu_name_label = new Label[GRID_NUM];
-        private Label[] menu_price_label = new Label[GRID_NUM];
-        private Panel[] menu_panel = new Panel[GRID_NUM];
+        private Button[] change_button;
+        private Label[] menu_name_label;
+        private Label[] menu_price_label;
+        private Panel[] menu_panel;
         private myMenuManager menu_manager;
         private ArrayList menu_list;
         private ArrayList purchase_list;
+
+        private static int side_dish_cnt = 0;
 
         public MainForm()
         {
@@ -37,6 +39,10 @@ namespace helloworld
             menu_manager = new myMenuManager();
             menu_list = new ArrayList();
             purchase_list = new ArrayList();
+            change_button = new Button[GRID_NUM];
+            menu_name_label = new Label[GRID_NUM];
+            menu_price_label = new Label[GRID_NUM];
+            menu_panel = new Panel[GRID_NUM];
             menu_manager.makeMenuList("menu.csv");
             menu_list = menu_manager.getMenuList();
 
@@ -49,8 +55,8 @@ namespace helloworld
             menu_name_label[0] = label2; menu_name_label[1] = label6; menu_name_label[2] = label8; menu_name_label[3] = label10;
             menu_name_label[4] = label12; menu_name_label[5] = label14; menu_name_label[6] = label16; menu_name_label[7] = label18;
             menu_name_label[8] = label20; menu_name_label[9] = label22; menu_name_label[10] = label24; menu_name_label[11] = label26;
-            menu_name_label[10] = label28; menu_name_label[13] = label30; menu_name_label[14] = label32; menu_name_label[15] = label34;
-            menu_name_label[14] = label36; menu_name_label[17] = label38; menu_name_label[18] = label40; menu_name_label[19] = label42;
+            menu_name_label[12] = label28; menu_name_label[13] = label30; menu_name_label[14] = label32; menu_name_label[15] = label34;
+            menu_name_label[16] = label36; menu_name_label[17] = label38; menu_name_label[18] = label40; menu_name_label[19] = label42;
 
             menu_price_label[0] = label3; menu_price_label[1] = label5; menu_price_label[2] = label7; menu_price_label[3] = label9;
             menu_price_label[4] = label11; menu_price_label[5] = label13; menu_price_label[6] = label15; menu_price_label[7] = label17;
@@ -70,11 +76,11 @@ namespace helloworld
             {
                 setNoodleMenu(i);
             }
-            //for (int i = RAMEN_FLAG_ID; i <= 25; i++)
-            //{
-            //    setNoodleMenu(i);
-            //}
-            //setNoodleMenu(75);
+            for (int i = RAMEN_FLAG_ID; i <= 25; i++)
+            {
+                setNoodleMenu(i);
+            }
+            setNoodleMenu(75);
         }
 
         private void button1_Click(object sender, EventArgs e) //麺類タブ
@@ -152,10 +158,8 @@ namespace helloworld
         {
             if (id != 75)
             {
-                int j = id <= 10 ? id - UDON_FLAG_ID : id - RAMEN_FLAG_ID + 11;
-                Console.WriteLine("id " + id);
+                int j = id <= 10 ? id - UDON_FLAG_ID : id - RAMEN_FLAG_ID + 10;
                 string menu_name = menu_manager.getNameById(id);
-                Console.WriteLine(menu_name);
                 this.menu_panel[j].Visible = true;
                 this.menu_name_label[j].Text = menu_name;
                 this.menu_price_label[j].Text = (menu_manager.getPrice(menu_name)).ToString();
@@ -164,21 +168,24 @@ namespace helloworld
                     this.change_button[j].Visible = true;
                     this.change_button[j].Text = "そばに変更";
                 }
+                else {
+                    this.change_button[j].Visible = false;
+                }
             }
             else
             { //焼きそばのため
                 string menu_name = menu_manager.getNameById(75);
-                this.menu_panel[16].Visible = true;
-                this.menu_name_label[16].Text = menu_name;
-                this.menu_price_label[16].Text = (menu_manager.getPrice(menu_name)).ToString();
+                this.menu_panel[15].Visible = true;
+                this.menu_name_label[15].Text = menu_name;
+                this.menu_price_label[15].Text = (menu_manager.getPrice(menu_name)).ToString();
+                this.change_button[15].Visible = false;
             }
         }
 
         private void setRiceMenu(int id)
         {
-            int j = id <= 54 ? id - RICE_FLAG_ID : 11;
+            int j = id <= 54 ? (id - RICE_FLAG_ID)/3 : 10;
             string menu_name = menu_manager.getNameById(id);
-            j = (id - RICE_FLAG_ID) / 3;
             this.menu_panel[j].Visible = true;
             this.menu_name_label[j].Text = menu_name;
             this.menu_price_label[j].Text = (menu_manager.getPrice(menu_name)).ToString();
@@ -187,32 +194,47 @@ namespace helloworld
                 this.change_button[j].Visible = true;
                 this.change_button[j].Text = "サイズを変更";
             }
+            else {
+                this.change_button[j].Visible = false;
+            }
         }
 
         private void setSideDishMenu(int id)
         {
-            int j = id - SIDE_DISH_FLAG_ID;
-            if (id != 57 && id != 70 && id != 72 && id != 74)
+           if (id != 57 && id != 70 && id != 72 && id != 74)
             {
+              
                 string menu_name = menu_manager.getNameById(id);
-                this.menu_panel[j].Visible = true;
-                this.menu_name_label[j].Text = menu_name;
-                this.menu_price_label[j].Text = (menu_manager.getPrice(menu_name)).ToString();
+                this.menu_panel[side_dish_cnt].Visible = true;
+                this.menu_name_label[side_dish_cnt].Text = menu_name;
+                this.menu_price_label[side_dish_cnt].Text = (menu_manager.getPrice(menu_name)).ToString();
                 if (this.menu_manager.canChangeSize(id))
                 {
-                    this.change_button[j].Visible = true;
-                    this.change_button[j].Text = "サイズを変更";
+                    this.change_button[side_dish_cnt].Visible = true;
+                    this.change_button[side_dish_cnt].Text = "サイズを変更";
                 }
+                else {
+                    this.change_button[side_dish_cnt].Visible = false;
+                }
+                side_dish_cnt++;
             }
         }
 
         private void setSmallBowlMenu(int id)
         {
-            int j = id <= 90 ? id - SMALL_BOWL_FLAG_ID : id - SOUP_FLAG_ID + 16;
+            int j = id <= 90 ? id - SMALL_BOWL_FLAG_ID : id - SOUP_FLAG_ID + 15;
             string menu_name = menu_manager.getNameById(id);
             this.menu_panel[j].Visible = true;
             this.menu_name_label[j].Text = menu_name;
             this.menu_price_label[j].Text = (menu_manager.getPrice(menu_name)).ToString();
+            if (this.menu_manager.canChangeSize(id))
+            {
+                this.change_button[j].Visible = true;
+                this.change_button[j].Text = "サイズを変更";
+            }
+            else {
+                this.change_button[j].Visible = false;
+            }
         }
 
         private void setDessertMenu(int id)
@@ -222,6 +244,14 @@ namespace helloworld
             this.menu_panel[j].Visible = true;
             this.menu_name_label[j].Text = menu_name;
             this.menu_price_label[j].Text = (menu_manager.getPrice(menu_name)).ToString();
+            if (this.menu_manager.canChangeSize(id))
+            {
+                this.change_button[j].Visible = true;
+                this.change_button[j].Text = "サイズを変更";
+            }
+            else {
+                this.change_button[j].Visible = false;
+            }
         }
 
 

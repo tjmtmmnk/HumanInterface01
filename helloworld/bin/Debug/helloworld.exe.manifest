@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="helloworld.exe" size="53248">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="helloworld.exe" size="53760">
       <assemblyIdentity name="helloworld" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>nCe6NE3Mq8KA9dnshqvLcbDwV6U=</dsig:DigestValue>
+        <dsig:DigestValue>JCID0EIMkvsLGq7UwhE7sFQxlJI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
