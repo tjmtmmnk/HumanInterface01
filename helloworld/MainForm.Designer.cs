@@ -143,6 +143,36 @@
             this.panel27 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.panel28 = new System.Windows.Forms.Panel();
+            this.panel37 = new System.Windows.Forms.Panel();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.button54 = new System.Windows.Forms.Button();
+            this.panel35 = new System.Windows.Forms.Panel();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.button53 = new System.Windows.Forms.Button();
+            this.panel34 = new System.Windows.Forms.Panel();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.button52 = new System.Windows.Forms.Button();
+            this.panel33 = new System.Windows.Forms.Panel();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.button51 = new System.Windows.Forms.Button();
+            this.panel32 = new System.Windows.Forms.Panel();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.button50 = new System.Windows.Forms.Button();
+            this.panel31 = new System.Windows.Forms.Panel();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.button49 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.panel29 = new System.Windows.Forms.Panel();
             this.button48 = new System.Windows.Forms.Button();
@@ -153,7 +183,7 @@
             this.label43 = new System.Windows.Forms.Label();
             this.panel30 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel36 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -181,12 +211,19 @@
             this.panel26.SuspendLayout();
             this.panel27.SuspendLayout();
             this.panel28.SuspendLayout();
+            this.panel37.SuspendLayout();
+            this.panel35.SuspendLayout();
+            this.panel34.SuspendLayout();
+            this.panel33.SuspendLayout();
+            this.panel32.SuspendLayout();
+            this.panel31.SuspendLayout();
             this.panel29.SuspendLayout();
             this.panel30.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.button27);
             this.panel1.Controls.Add(this.label3);
@@ -238,9 +275,10 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(184, 31);
             this.button6.TabIndex = 0;
+            this.button6.Tag = "0";
             this.button6.Text = "購入";
             this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.Click += new System.EventHandler(this.addToPurchaseDisplay);
             // 
             // panel2
             // 
@@ -296,9 +334,10 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(184, 31);
             this.button8.TabIndex = 1;
+            this.button8.Tag = "2";
             this.button8.Text = "購入";
             this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.button8.Click += new System.EventHandler(this.addToPurchaseDisplay);
             // 
             // panel3
             // 
@@ -353,9 +392,10 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(184, 31);
             this.button7.TabIndex = 1;
+            this.button7.Tag = "1";
             this.button7.Text = "購入";
             this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.button7.Click += new System.EventHandler(this.addToPurchaseDisplay);
             // 
             // panel4
             // 
@@ -410,9 +450,10 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(184, 31);
             this.button9.TabIndex = 1;
+            this.button9.Tag = "3";
             this.button9.Text = "購入";
             this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.button9.Click += new System.EventHandler(this.addToPurchaseDisplay);
             // 
             // panel5
             // 
@@ -466,9 +507,10 @@
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(184, 31);
             this.button11.TabIndex = 1;
+            this.button11.Tag = "5";
             this.button11.Text = "購入";
             this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.button11.Click += new System.EventHandler(this.addToPurchaseDisplay);
             // 
             // panel6
             // 
@@ -522,9 +564,10 @@
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(184, 31);
             this.button12.TabIndex = 1;
+            this.button12.Tag = "6";
             this.button12.Text = "購入";
             this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
+            this.button12.Click += new System.EventHandler(this.addToPurchaseDisplay);
             // 
             // panel7
             // 
@@ -580,9 +623,10 @@
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(184, 31);
             this.button13.TabIndex = 1;
+            this.button13.Tag = "7";
             this.button13.Text = "購入";
             this.button13.UseVisualStyleBackColor = false;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
+            this.button13.Click += new System.EventHandler(this.addToPurchaseDisplay);
             // 
             // panel8
             // 
@@ -636,9 +680,10 @@
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(184, 31);
             this.button10.TabIndex = 1;
+            this.button10.Tag = "4";
             this.button10.Text = "購入";
             this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.button10.Click += new System.EventHandler(this.addToPurchaseDisplay);
             // 
             // panel9
             // 
@@ -690,8 +735,10 @@
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(184, 31);
             this.button16.TabIndex = 5;
+            this.button16.Tag = "9";
             this.button16.Text = "購入";
             this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.addToPurchaseDisplay);
             // 
             // panel10
             // 
@@ -744,8 +791,10 @@
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(184, 31);
             this.button17.TabIndex = 5;
+            this.button17.Tag = "10";
             this.button17.Text = "購入";
             this.button17.UseVisualStyleBackColor = false;
+            this.button17.Click += new System.EventHandler(this.addToPurchaseDisplay);
             // 
             // panel11
             // 
@@ -797,8 +846,10 @@
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(184, 31);
             this.button18.TabIndex = 8;
+            this.button18.Tag = "11";
             this.button18.Text = "購入";
             this.button18.UseVisualStyleBackColor = false;
+            this.button18.Click += new System.EventHandler(this.addToPurchaseDisplay);
             // 
             // panel12
             // 
@@ -851,8 +902,10 @@
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(184, 31);
             this.button15.TabIndex = 5;
+            this.button15.Tag = "8";
             this.button15.Text = "購入";
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.addToPurchaseDisplay);
             // 
             // panel13
             // 
@@ -905,8 +958,10 @@
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(184, 31);
             this.button20.TabIndex = 8;
+            this.button20.Tag = "13";
             this.button20.Text = "購入";
             this.button20.UseVisualStyleBackColor = false;
+            this.button20.Click += new System.EventHandler(this.addToPurchaseDisplay);
             // 
             // panel14
             // 
@@ -959,8 +1014,10 @@
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(184, 31);
             this.button21.TabIndex = 8;
+            this.button21.Tag = "14";
             this.button21.Text = "購入";
             this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.addToPurchaseDisplay);
             // 
             // panel15
             // 
@@ -1013,8 +1070,10 @@
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(184, 31);
             this.button22.TabIndex = 8;
+            this.button22.Tag = "15";
             this.button22.Text = "購入";
             this.button22.UseVisualStyleBackColor = false;
+            this.button22.Click += new System.EventHandler(this.addToPurchaseDisplay);
             // 
             // panel17
             // 
@@ -1066,8 +1125,10 @@
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(184, 31);
             this.button24.TabIndex = 8;
+            this.button24.Tag = "17";
             this.button24.Text = "購入";
             this.button24.UseVisualStyleBackColor = false;
+            this.button24.Click += new System.EventHandler(this.addToPurchaseDisplay);
             // 
             // panel18
             // 
@@ -1119,8 +1180,10 @@
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(184, 31);
             this.button25.TabIndex = 8;
+            this.button25.Tag = "18";
             this.button25.Text = "購入";
             this.button25.UseVisualStyleBackColor = false;
+            this.button25.Click += new System.EventHandler(this.addToPurchaseDisplay);
             // 
             // panel19
             // 
@@ -1173,8 +1236,10 @@
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(184, 31);
             this.button26.TabIndex = 8;
+            this.button26.Tag = "19";
             this.button26.Text = "購入";
             this.button26.UseVisualStyleBackColor = false;
+            this.button26.Click += new System.EventHandler(this.addToPurchaseDisplay);
             // 
             // panel20
             // 
@@ -1227,8 +1292,10 @@
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(184, 31);
             this.button23.TabIndex = 8;
+            this.button23.Tag = "16";
             this.button23.Text = "購入";
             this.button23.UseVisualStyleBackColor = false;
+            this.button23.Click += new System.EventHandler(this.addToPurchaseDisplay);
             // 
             // panel16
             // 
@@ -1281,8 +1348,10 @@
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(184, 31);
             this.button19.TabIndex = 8;
+            this.button19.Tag = "12";
             this.button19.Text = "購入";
             this.button19.UseVisualStyleBackColor = false;
+            this.button19.Click += new System.EventHandler(this.addToPurchaseDisplay);
             // 
             // panel21
             // 
@@ -1297,9 +1366,9 @@
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.button1.Font = new System.Drawing.Font("MS UI Gothic", 13F);
-            this.button1.Location = new System.Drawing.Point(1, 1);
+            this.button1.Location = new System.Drawing.Point(-2, -2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 53);
+            this.button1.Size = new System.Drawing.Size(117, 59);
             this.button1.TabIndex = 0;
             this.button1.Text = "麺類";
             this.button1.UseVisualStyleBackColor = false;
@@ -1318,10 +1387,11 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button2.Enabled = false;
             this.button2.Font = new System.Drawing.Font("MS UI Gothic", 13F);
-            this.button2.Location = new System.Drawing.Point(2, 2);
+            this.button2.Location = new System.Drawing.Point(-1, -1);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(131, 53);
+            this.button2.Size = new System.Drawing.Size(134, 59);
             this.button2.TabIndex = 21;
             this.button2.Text = "ご飯類";
             this.button2.UseVisualStyleBackColor = false;
@@ -1347,9 +1417,9 @@
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button3.Font = new System.Drawing.Font("MS UI Gothic", 13F);
-            this.button3.Location = new System.Drawing.Point(2, 2);
+            this.button3.Location = new System.Drawing.Point(-1, -1);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(156, 53);
+            this.button3.Size = new System.Drawing.Size(159, 59);
             this.button3.TabIndex = 0;
             this.button3.Text = "サイドメニュー";
             this.button3.UseVisualStyleBackColor = false;
@@ -1389,9 +1459,9 @@
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.button4.Font = new System.Drawing.Font("MS UI Gothic", 13F);
-            this.button4.Location = new System.Drawing.Point(3, 2);
+            this.button4.Location = new System.Drawing.Point(-1, -1);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(174, 53);
+            this.button4.Size = new System.Drawing.Size(178, 59);
             this.button4.TabIndex = 0;
             this.button4.Text = "小鉢料理/汁物";
             this.button4.UseVisualStyleBackColor = false;
@@ -1410,9 +1480,9 @@
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.button5.Font = new System.Drawing.Font("MS UI Gothic", 13F);
-            this.button5.Location = new System.Drawing.Point(3, 3);
+            this.button5.Location = new System.Drawing.Point(-1, -1);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(160, 53);
+            this.button5.Size = new System.Drawing.Size(164, 59);
             this.button5.TabIndex = 0;
             this.button5.Text = "デザート";
             this.button5.UseVisualStyleBackColor = false;
@@ -1421,22 +1491,333 @@
             // panel28
             // 
             this.panel28.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel28.Controls.Add(this.panel37);
+            this.panel28.Controls.Add(this.panel35);
+            this.panel28.Controls.Add(this.panel34);
+            this.panel28.Controls.Add(this.panel33);
+            this.panel28.Controls.Add(this.panel32);
+            this.panel28.Controls.Add(this.panel31);
             this.panel28.Controls.Add(this.button14);
             this.panel28.Controls.Add(this.panel29);
-            this.panel28.Controls.Add(this.tableLayoutPanel1);
             this.panel28.Location = new System.Drawing.Point(786, 66);
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(222, 652);
             this.panel28.TabIndex = 22;
-            this.panel28.Visible = false;
             this.panel28.Paint += new System.Windows.Forms.PaintEventHandler(this.panel28_Paint);
+            // 
+            // panel37
+            // 
+            this.panel37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel37.Controls.Add(this.label62);
+            this.panel37.Controls.Add(this.label63);
+            this.panel37.Controls.Add(this.label64);
+            this.panel37.Controls.Add(this.button54);
+            this.panel37.Location = new System.Drawing.Point(3, 298);
+            this.panel37.Name = "panel37";
+            this.panel37.Size = new System.Drawing.Size(212, 53);
+            this.panel37.TabIndex = 4;
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Location = new System.Drawing.Point(115, 30);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(41, 12);
+            this.label62.TabIndex = 6;
+            this.label62.Text = "label62";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Location = new System.Drawing.Point(115, 8);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(41, 12);
+            this.label63.TabIndex = 5;
+            this.label63.Text = "label63";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Location = new System.Drawing.Point(25, 8);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(41, 12);
+            this.label64.TabIndex = 4;
+            this.label64.Text = "label64";
+            // 
+            // button54
+            // 
+            this.button54.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button54.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button54.Location = new System.Drawing.Point(163, -1);
+            this.button54.Name = "button54";
+            this.button54.Size = new System.Drawing.Size(48, 53);
+            this.button54.TabIndex = 1;
+            this.button54.Tag = "5";
+            this.button54.Text = "×";
+            this.button54.UseVisualStyleBackColor = false;
+            // 
+            // panel35
+            // 
+            this.panel35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel35.Controls.Add(this.label59);
+            this.panel35.Controls.Add(this.label60);
+            this.panel35.Controls.Add(this.label61);
+            this.panel35.Controls.Add(this.button53);
+            this.panel35.Location = new System.Drawing.Point(3, 239);
+            this.panel35.Name = "panel35";
+            this.panel35.Size = new System.Drawing.Size(212, 53);
+            this.panel35.TabIndex = 4;
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(115, 30);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(41, 12);
+            this.label59.TabIndex = 6;
+            this.label59.Text = "label59";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(115, 8);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(41, 12);
+            this.label60.TabIndex = 5;
+            this.label60.Text = "label60";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(25, 8);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(41, 12);
+            this.label61.TabIndex = 4;
+            this.label61.Text = "label61";
+            // 
+            // button53
+            // 
+            this.button53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button53.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button53.Location = new System.Drawing.Point(163, -1);
+            this.button53.Name = "button53";
+            this.button53.Size = new System.Drawing.Size(48, 53);
+            this.button53.TabIndex = 1;
+            this.button53.Tag = "4";
+            this.button53.Text = "×";
+            this.button53.UseVisualStyleBackColor = false;
+            // 
+            // panel34
+            // 
+            this.panel34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel34.Controls.Add(this.label56);
+            this.panel34.Controls.Add(this.label57);
+            this.panel34.Controls.Add(this.label58);
+            this.panel34.Controls.Add(this.button52);
+            this.panel34.Location = new System.Drawing.Point(3, 180);
+            this.panel34.Name = "panel34";
+            this.panel34.Size = new System.Drawing.Size(212, 53);
+            this.panel34.TabIndex = 4;
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(115, 30);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(41, 12);
+            this.label56.TabIndex = 6;
+            this.label56.Text = "label56";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(115, 8);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(41, 12);
+            this.label57.TabIndex = 5;
+            this.label57.Text = "label57";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(25, 8);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(41, 12);
+            this.label58.TabIndex = 4;
+            this.label58.Text = "label58";
+            // 
+            // button52
+            // 
+            this.button52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button52.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button52.Location = new System.Drawing.Point(163, -1);
+            this.button52.Name = "button52";
+            this.button52.Size = new System.Drawing.Size(48, 53);
+            this.button52.TabIndex = 1;
+            this.button52.Tag = "3";
+            this.button52.Text = "×";
+            this.button52.UseVisualStyleBackColor = false;
+            // 
+            // panel33
+            // 
+            this.panel33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel33.Controls.Add(this.label53);
+            this.panel33.Controls.Add(this.label54);
+            this.panel33.Controls.Add(this.label55);
+            this.panel33.Controls.Add(this.button51);
+            this.panel33.Location = new System.Drawing.Point(3, 121);
+            this.panel33.Name = "panel33";
+            this.panel33.Size = new System.Drawing.Size(212, 53);
+            this.panel33.TabIndex = 4;
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(115, 28);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(41, 12);
+            this.label53.TabIndex = 6;
+            this.label53.Text = "label53";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(115, 8);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(41, 12);
+            this.label54.TabIndex = 5;
+            this.label54.Text = "label54";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(25, 8);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(41, 12);
+            this.label55.TabIndex = 4;
+            this.label55.Text = "label55";
+            // 
+            // button51
+            // 
+            this.button51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button51.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button51.Location = new System.Drawing.Point(163, -1);
+            this.button51.Name = "button51";
+            this.button51.Size = new System.Drawing.Size(48, 53);
+            this.button51.TabIndex = 1;
+            this.button51.Tag = "2";
+            this.button51.Text = "×";
+            this.button51.UseVisualStyleBackColor = false;
+            // 
+            // panel32
+            // 
+            this.panel32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel32.Controls.Add(this.label50);
+            this.panel32.Controls.Add(this.label51);
+            this.panel32.Controls.Add(this.label52);
+            this.panel32.Controls.Add(this.button50);
+            this.panel32.Location = new System.Drawing.Point(3, 62);
+            this.panel32.Name = "panel32";
+            this.panel32.Size = new System.Drawing.Size(212, 53);
+            this.panel32.TabIndex = 4;
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(115, 30);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(41, 12);
+            this.label50.TabIndex = 6;
+            this.label50.Text = "label50";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(115, 8);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(41, 12);
+            this.label51.TabIndex = 5;
+            this.label51.Text = "label51";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(25, 8);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(41, 12);
+            this.label52.TabIndex = 4;
+            this.label52.Text = "label52";
+            // 
+            // button50
+            // 
+            this.button50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button50.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button50.Location = new System.Drawing.Point(163, -1);
+            this.button50.Name = "button50";
+            this.button50.Size = new System.Drawing.Size(48, 53);
+            this.button50.TabIndex = 1;
+            this.button50.Tag = "1";
+            this.button50.Text = "×";
+            this.button50.UseVisualStyleBackColor = false;
+            // 
+            // panel31
+            // 
+            this.panel31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel31.Controls.Add(this.label49);
+            this.panel31.Controls.Add(this.label48);
+            this.panel31.Controls.Add(this.label47);
+            this.panel31.Controls.Add(this.button49);
+            this.panel31.Location = new System.Drawing.Point(3, 3);
+            this.panel31.Name = "panel31";
+            this.panel31.Size = new System.Drawing.Size(212, 53);
+            this.panel31.TabIndex = 3;
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(115, 30);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(41, 12);
+            this.label49.TabIndex = 3;
+            this.label49.Text = "label49";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(115, 8);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(41, 12);
+            this.label48.TabIndex = 2;
+            this.label48.Text = "label48";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(25, 8);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(41, 12);
+            this.label47.TabIndex = 1;
+            this.label47.Text = "label47";
+            // 
+            // button49
+            // 
+            this.button49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button49.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button49.Location = new System.Drawing.Point(163, -1);
+            this.button49.Name = "button49";
+            this.button49.Size = new System.Drawing.Size(48, 53);
+            this.button49.TabIndex = 0;
+            this.button49.Tag = "0";
+            this.button49.Text = "×";
+            this.button49.UseVisualStyleBackColor = false;
             // 
             // button14
             // 
             this.button14.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button14.Location = new System.Drawing.Point(163, 335);
+            this.button14.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button14.Location = new System.Drawing.Point(155, 357);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(52, 50);
+            this.button14.Size = new System.Drawing.Size(60, 44);
             this.button14.TabIndex = 2;
             this.button14.Text = "次へ";
             this.button14.UseVisualStyleBackColor = false;
@@ -1453,19 +1834,19 @@
             this.panel29.Controls.Add(this.label44);
             this.panel29.Controls.Add(this.label43);
             this.panel29.Controls.Add(this.panel30);
-            this.panel29.Location = new System.Drawing.Point(3, 391);
+            this.panel29.Location = new System.Drawing.Point(3, 407);
             this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(217, 259);
+            this.panel29.Size = new System.Drawing.Size(217, 243);
             this.panel29.TabIndex = 1;
             // 
             // button48
             // 
-            this.button48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button48.Font = new System.Drawing.Font("MS UI Gothic", 15F);
+            this.button48.BackColor = System.Drawing.Color.Fuchsia;
+            this.button48.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.button48.ForeColor = System.Drawing.Color.Black;
-            this.button48.Location = new System.Drawing.Point(3, 215);
+            this.button48.Location = new System.Drawing.Point(-1, 199);
             this.button48.Name = "button48";
-            this.button48.Size = new System.Drawing.Size(208, 38);
+            this.button48.Size = new System.Drawing.Size(217, 38);
             this.button48.TabIndex = 27;
             this.button48.Text = "返金";
             this.button48.UseVisualStyleBackColor = false;
@@ -1474,8 +1855,8 @@
             // button47
             // 
             this.button47.BackColor = System.Drawing.Color.Red;
-            this.button47.Font = new System.Drawing.Font("MS UI Gothic", 20F);
-            this.button47.Location = new System.Drawing.Point(-1, 149);
+            this.button47.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button47.Location = new System.Drawing.Point(-1, 133);
             this.button47.Name = "button47";
             this.button47.Size = new System.Drawing.Size(217, 60);
             this.button47.TabIndex = 26;
@@ -1485,40 +1866,42 @@
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("MS UI Gothic", 14F);
-            this.label46.Location = new System.Drawing.Point(115, 105);
+            this.label46.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label46.Location = new System.Drawing.Point(134, 101);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(65, 19);
+            this.label46.Size = new System.Drawing.Size(72, 19);
             this.label46.TabIndex = 25;
             this.label46.Text = "label46";
             // 
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("MS UI Gothic", 15F);
-            this.label45.Location = new System.Drawing.Point(3, 105);
+            this.label45.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label45.Location = new System.Drawing.Point(22, 100);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(89, 20);
+            this.label45.Size = new System.Drawing.Size(93, 20);
             this.label45.TabIndex = 24;
             this.label45.Text = "購入金額";
             // 
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("MS UI Gothic", 14F);
-            this.label44.Location = new System.Drawing.Point(115, 73);
+            this.label44.Font = new System.Drawing.Font("MS UI Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label44.Location = new System.Drawing.Point(134, 73);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(65, 19);
+            this.label44.Size = new System.Drawing.Size(72, 19);
             this.label44.TabIndex = 23;
             this.label44.Text = "label44";
+            this.label44.Click += new System.EventHandler(this.label44_Click);
             // 
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("MS UI Gothic", 15F);
-            this.label43.Location = new System.Drawing.Point(3, 73);
+            this.label43.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label43.Font = new System.Drawing.Font("MS UI Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label43.Location = new System.Drawing.Point(22, 73);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(89, 20);
+            this.label43.Size = new System.Drawing.Size(93, 20);
             this.label43.TabIndex = 22;
             this.label43.Text = "投入金額";
             // 
@@ -1545,28 +1928,19 @@
             this.label4.Text = "確認画面";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // tableLayoutPanel1
+            // panel36
             // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(176, -2);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 6;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(44, 331);
-            this.tableLayoutPanel1.TabIndex = 0;
-            this.tableLayoutPanel1.Visible = false;
+            this.panel36.Location = new System.Drawing.Point(786, 344);
+            this.panel36.Name = "panel36";
+            this.panel36.Size = new System.Drawing.Size(174, 53);
+            this.panel36.TabIndex = 4;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.ClientSize = new System.Drawing.Size(1008, 730);
             this.Controls.Add(this.panel28);
+            this.Controls.Add(this.panel36);
             this.Controls.Add(this.panel27);
             this.Controls.Add(this.panel26);
             this.Controls.Add(this.panel24);
@@ -1644,6 +2018,18 @@
             this.panel26.ResumeLayout(false);
             this.panel27.ResumeLayout(false);
             this.panel28.ResumeLayout(false);
+            this.panel37.ResumeLayout(false);
+            this.panel37.PerformLayout();
+            this.panel35.ResumeLayout(false);
+            this.panel35.PerformLayout();
+            this.panel34.ResumeLayout(false);
+            this.panel34.PerformLayout();
+            this.panel33.ResumeLayout(false);
+            this.panel33.PerformLayout();
+            this.panel32.ResumeLayout(false);
+            this.panel32.PerformLayout();
+            this.panel31.ResumeLayout(false);
+            this.panel31.PerformLayout();
             this.panel29.ResumeLayout(false);
             this.panel29.PerformLayout();
             this.panel30.ResumeLayout(false);
@@ -1699,7 +2085,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel29;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel30;
         private System.Windows.Forms.Button button14;
@@ -1779,5 +2164,36 @@
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Panel panel37;
+        private System.Windows.Forms.Panel panel35;
+        private System.Windows.Forms.Panel panel34;
+        private System.Windows.Forms.Panel panel33;
+        private System.Windows.Forms.Panel panel32;
+        private System.Windows.Forms.Panel panel31;
+        private System.Windows.Forms.Panel panel36;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Button button54;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Button button53;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Button button52;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Button button51;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Button button50;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Button button49;
     }
 }

@@ -1,0 +1,5 @@
+Application, Window Text, Action Object, Object Text, Time(1 = 100 nanosec)
+helloworld.MainForm, Text: 商品選択ページ, System.Windows.Forms.Button, Text: ご飯類, 21694267
+helloworld.MainForm, Text: 商品選択ページ, System.Windows.Forms.Button, Text: サイドメニュー, 48339267
+helloworld.MainForm, Text: 商品選択ページ, System.Windows.Forms.Button, Text: 小鉢料理/汁物, 123510791
+helloworld.MainForm, Text: 商品選択ページ, System.Windows.Forms.Button, Text: デザート, 302185703
