@@ -23,7 +23,10 @@ namespace helloworld
         //protected static string str_name;
         //static DateTime before;
         protected static string item_name;	// 購入した食券の商品名
-        protected static int money = 0;	// 券売機への投入金額
+        protected static int user_money = 0;	// 券売機への投入金額
+        protected static int purchase_item_num = 1;
+        protected static int purchase_price = 0;
+        protected static bool is_selected_item_num = false;
 
         // 商品のサイズ
         protected const int SS = 0;

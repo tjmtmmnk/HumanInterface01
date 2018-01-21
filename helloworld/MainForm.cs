@@ -10,6 +10,15 @@ using System.IO;
 
 namespace helloworld
 {
+
+    class PuchaseItem
+    {
+        public String name;
+        public int num;
+        public int price;
+        public int total_price;
+    }
+
     public partial class MainForm : helloworld.Form_orig
     {
         private const int UDON_FLAG_ID = 1;
@@ -22,17 +31,24 @@ namespace helloworld
 
         private const int GRID_NUM = 20;
         private const int TAB_NUM = 5;
+        private const int PURCHASE_LIST_NUM = 6;
 
         private Button[] change_button;
+        private Button[] purchase_button;
         private Label[] menu_name_label;
         private Label[] menu_price_label;
+        private Label[] purchase_menu_name_label;
+        private Label[] purchase_menu_price_label;
+        private Label[] purchase_menu_num_label;
         private Panel[] menu_panel;
         private Panel[] tab_button;
+        private Panel[] purchase_menu_panel;
         private myMenuManager menu_manager;
         private ArrayList menu_list;
-        private ArrayList purchase_list;
+        private List<PuchaseItem> purchase_list;
 
         private static int side_dish_cnt = 0;
+        private static int now_purchase_page = 1;
 
         public MainForm()
         {
@@ -40,11 +56,16 @@ namespace helloworld
             start_log();
             menu_manager = new myMenuManager();
             menu_list = new ArrayList();
-            purchase_list = new ArrayList();
+            purchase_list = new List<PuchaseItem>();
             change_button = new Button[GRID_NUM];
+            purchase_button = new Button[GRID_NUM];
             tab_button = new Panel[TAB_NUM];
             menu_name_label = new Label[GRID_NUM];
             menu_price_label = new Label[GRID_NUM];
+            purchase_menu_name_label = new Label[PURCHASE_LIST_NUM];
+            purchase_menu_price_label = new Label[PURCHASE_LIST_NUM];
+            purchase_menu_num_label = new Label[PURCHASE_LIST_NUM];
+            purchase_menu_panel = new Panel[PURCHASE_LIST_NUM];
             menu_panel = new Panel[GRID_NUM];
             menu_manager.makeMenuList("menu.csv");
             menu_list = menu_manager.getMenuList();
@@ -54,6 +75,12 @@ namespace helloworld
             change_button[8] = button35; change_button[9] = button36; change_button[10] = button37; change_button[11] = button38;
             change_button[12] = button39; change_button[13] = button40; change_button[14] = button41; change_button[15] = button42;
             change_button[16] = button43; change_button[17] = button44; change_button[18] = button45; change_button[19] = button46;
+
+            purchase_button[0] = button6; purchase_button[1] = button7; purchase_button[2] = button8; purchase_button[3] = button9;
+            purchase_button[4] = button10; purchase_button[5] = button11; purchase_button[6] = button12; purchase_button[7] = button13;
+            purchase_button[8] = button15; purchase_button[9] = button16; purchase_button[10] = button17; purchase_button[11] = button18;
+            purchase_button[12] = button19; purchase_button[13] = button20; purchase_button[14] = button21; purchase_button[15] = button22;
+            purchase_button[16] = button23; purchase_button[17] = button24; purchase_button[18] = button25; purchase_button[19] = button26;
 
             menu_name_label[0] = label2; menu_name_label[1] = label6; menu_name_label[2] = label8; menu_name_label[3] = label10;
             menu_name_label[4] = label12; menu_name_label[5] = label14; menu_name_label[6] = label16; menu_name_label[7] = label18;
@@ -75,6 +102,13 @@ namespace helloworld
 
             tab_button[0] = panel21; tab_button[1] = panel22; tab_button[2] = panel24; tab_button[3] = panel26; tab_button[4] = panel27;
 
+            purchase_menu_panel[0] = panel31; purchase_menu_name_label[0] = label47; purchase_menu_num_label[0] = label48; purchase_menu_price_label[0] = label49;
+            purchase_menu_panel[1] = panel32; purchase_menu_name_label[1] = label52; purchase_menu_num_label[1] = label51; purchase_menu_price_label[1] = label50;
+            purchase_menu_panel[2] = panel33; purchase_menu_name_label[2] = label55; purchase_menu_num_label[2] = label54; purchase_menu_price_label[2] = label53;
+            purchase_menu_panel[3] = panel34; purchase_menu_name_label[3] = label58; purchase_menu_num_label[3] = label57; purchase_menu_price_label[3] = label56;
+            purchase_menu_panel[4] = panel35; purchase_menu_name_label[4] = label61; purchase_menu_num_label[4] = label60; purchase_menu_price_label[4] = label59;
+            purchase_menu_panel[5] = panel37; purchase_menu_name_label[5] = label64; purchase_menu_num_label[5] = label63; purchase_menu_price_label[5] = label62;
+
             //初期に麺類の画面を表示
             this.invisibleAllMenu();
             for (int i = UDON_FLAG_ID; i <= 10; i++)
@@ -86,6 +120,10 @@ namespace helloworld
                 setNoodleMenu(i);
             }
             setNoodleMenu(75);
+
+            label44.Text = user_money.ToString();
+
+
         }
 
         private void button1_Click(object sender, EventArgs e) //麺類タブ
@@ -165,17 +203,100 @@ namespace helloworld
             }
         }
 
+        private void nextPage(object sender, EventArgs e)
+        { //次へボタンに割当
+            now_purchase_page++;
+            appearInPurchaseDisplay();
+        }
+
+        private void previousPage(object sender, EventArgs e) //前へボタンに割当
+        {
+            now_purchase_page--;
+            appearInPurchaseDisplay();
+        }
+
         private void addToPurchaseDisplay(object sender, EventArgs e)
         {
+            PuchaseItem item = new PuchaseItem();
             int tag = int.Parse(((Button)sender).Tag.ToString());
-            Console.WriteLine(menu_name_label[tag].Text + menu_price_label[tag].Text);
+            item.name = menu_name_label[tag].Text;
+            item.price = int.Parse(menu_price_label[tag].Text);
+            /*SelectNum newform = new SelectNum();
+             * newform.Show();
+             * this.Hide();
+             */
+            if (is_selected_item_num) //num select画面へ遷移
+            {
+                item.num = purchase_item_num;
+                item.total_price = item.price * purchase_item_num;
+                purchase_list.Add(item);
+            }
+        }
+
+        private void appearInPurchaseDisplay()
+        {
+            int purchase_list_size = purchase_list.Count;
+            int required_page_num = purchase_list_size / PURCHASE_LIST_NUM + 1;
+            if (now_purchase_page > required_page_num) { return; }
+            for (int i = 0; i < purchase_list_size; i++)
+            {
+                int j = required_page_num <= 1 ? i : i + (now_purchase_page - 1) * PURCHASE_LIST_NUM;
+
+                purchase_menu_panel[i].Visible = true;
+                purchase_menu_name_label[i].Text = purchase_list[j].name;
+                purchase_menu_num_label[i].Text = purchase_list[j].num.ToString();
+                purchase_menu_price_label[i].Text = purchase_list[j].total_price.ToString();
+
+            }
+            highlightCanPurchaseMenu();
+        }
+
+        private void deleteItemInPurchaseDisplay(object sender, EventArgs e)
+        {
+            int tag = int.Parse(((Button)sender).Tag.ToString());
+            purchase_list.RemoveAt(tag);
+            appearInPurchaseDisplay();
+            //updateDisplay();
+        }
+
+        private void highlightCanPurchaseMenu()
+        {
+            int i = 0;
+            while (menu_panel[i].Visible)
+            {
+                int menu_price = int.Parse(menu_price_label[i].Text);
+                if (user_money < menu_price)
+                {
+                    purchase_button[i].Enabled = false;
+                    menu_panel[i].BackColor = Color.DarkGray;
+                }
+                i++;
+            }
+            //updateDisplay();
+        }
+
+        private void updateDisplay()
+        {
+            int i = 0;
+            while (menu_panel[i].Visible)
+            {
+                menu_panel[i].Refresh();
+                i++;
+            }
+            i = 0;
+            while (purchase_menu_panel[i].Visible)
+            {
+                purchase_menu_panel[i].Refresh();
+                i++;
+            }
         }
 
         private void resetTabBorder()
         {
-            for (int i = 0; i < TAB_NUM; i++) {
+            for (int i = 0; i < TAB_NUM; i++)
+            {
                 tab_button[i].BorderStyle = BorderStyle.None;
-           }
+            }
         }
 
         private void setNoodleMenu(int id)
@@ -192,7 +313,8 @@ namespace helloworld
                     this.change_button[j].Visible = true;
                     this.change_button[j].Text = "そばに変更";
                 }
-                else {
+                else
+                {
                     this.change_button[j].Visible = false;
                 }
             }
@@ -218,7 +340,8 @@ namespace helloworld
                 this.change_button[j].Visible = true;
                 this.change_button[j].Text = "サイズを変更";
             }
-            else {
+            else
+            {
                 this.change_button[j].Visible = false;
             }
         }
@@ -237,7 +360,8 @@ namespace helloworld
                     this.change_button[side_dish_cnt].Visible = true;
                     this.change_button[side_dish_cnt].Text = "サイズを変更";
                 }
-                else {
+                else
+                {
                     this.change_button[side_dish_cnt].Visible = false;
                 }
                 side_dish_cnt++;
@@ -256,7 +380,8 @@ namespace helloworld
                 this.change_button[j].Visible = true;
                 this.change_button[j].Text = "サイズを変更";
             }
-            else {
+            else
+            {
                 this.change_button[j].Visible = false;
             }
         }
@@ -273,11 +398,11 @@ namespace helloworld
                 this.change_button[j].Visible = true;
                 this.change_button[j].Text = "サイズを変更";
             }
-            else {
+            else
+            {
                 this.change_button[j].Visible = false;
             }
         }
-
 
         private void listBox10_SelectedIndexChanged(object sender, EventArgs e)
         {
