@@ -21,11 +21,13 @@ namespace helloworld
         private const int SOUP_FLAG_ID = 95;
 
         private const int GRID_NUM = 20;
+        private const int TAB_NUM = 5;
 
         private Button[] change_button;
         private Label[] menu_name_label;
         private Label[] menu_price_label;
         private Panel[] menu_panel;
+        private Panel[] tab_button;
         private myMenuManager menu_manager;
         private ArrayList menu_list;
         private ArrayList purchase_list;
@@ -40,6 +42,7 @@ namespace helloworld
             menu_list = new ArrayList();
             purchase_list = new ArrayList();
             change_button = new Button[GRID_NUM];
+            tab_button = new Panel[TAB_NUM];
             menu_name_label = new Label[GRID_NUM];
             menu_price_label = new Label[GRID_NUM];
             menu_panel = new Panel[GRID_NUM];
@@ -70,6 +73,8 @@ namespace helloworld
             menu_panel[12] = panel16; menu_panel[13] = panel13; menu_panel[14] = panel14; menu_panel[15] = panel15;
             menu_panel[16] = panel20; menu_panel[17] = panel17; menu_panel[18] = panel18; menu_panel[19] = panel19;
 
+            tab_button[0] = panel21; tab_button[1] = panel22; tab_button[2] = panel24; tab_button[3] = panel26; tab_button[4] = panel27;
+
             //初期に麺類の画面を表示
             this.invisibleAllMenu();
             for (int i = UDON_FLAG_ID; i <= 10; i++)
@@ -86,6 +91,8 @@ namespace helloworld
         private void button1_Click(object sender, EventArgs e) //麺類タブ
         {
             this.invisibleAllMenu();
+            this.resetTabBorder();
+            this.tab_button[0].BorderStyle = BorderStyle.Fixed3D;
             for (int i = UDON_FLAG_ID; i <= 10; i++)
             {
                 setNoodleMenu(i);
@@ -101,6 +108,8 @@ namespace helloworld
         {
             this.log(this, sender, e);
             this.invisibleAllMenu();
+            this.resetTabBorder();
+            this.tab_button[1].BorderStyle = BorderStyle.Fixed3D;
             for (int i = RICE_FLAG_ID; i <= 54; i += 3)
             {
                 setRiceMenu(i);
@@ -112,6 +121,8 @@ namespace helloworld
         {
             this.log(this, sender, e);
             this.invisibleAllMenu();
+            this.resetTabBorder();
+            this.tab_button[2].BorderStyle = BorderStyle.Fixed3D;
             for (int i = SIDE_DISH_FLAG_ID; i <= 74; i++) //56はから揚げ(中)のid
             {
                 setSideDishMenu(i);
@@ -122,6 +133,8 @@ namespace helloworld
         {
             this.log(this, sender, e);
             this.invisibleAllMenu();
+            this.resetTabBorder();
+            this.tab_button[3].BorderStyle = BorderStyle.Fixed3D;
             for (int i = SMALL_BOWL_FLAG_ID; i <= 90; i++)
             {
                 setSmallBowlMenu(i);
@@ -136,7 +149,10 @@ namespace helloworld
         {
             this.log(this, sender, e);
             this.invisibleAllMenu();
-            for (int i = DESSERT_FLAG_ID; i <= 94; i++) {
+            this.resetTabBorder();
+            this.tab_button[4].BorderStyle = BorderStyle.Fixed3D;
+            for (int i = DESSERT_FLAG_ID; i <= 94; i++)
+            {
                 setDessertMenu(i);
             }
         }
@@ -149,9 +165,17 @@ namespace helloworld
             }
         }
 
-        private void addToPurchaseDisplay()
+        private void addToPurchaseDisplay(object sender, EventArgs e)
         {
+            int tag = int.Parse(((Button)sender).Tag.ToString());
+            Console.WriteLine(menu_name_label[tag].Text + menu_price_label[tag].Text);
+        }
 
+        private void resetTabBorder()
+        {
+            for (int i = 0; i < TAB_NUM; i++) {
+                tab_button[i].BorderStyle = BorderStyle.None;
+           }
         }
 
         private void setNoodleMenu(int id)
@@ -162,7 +186,7 @@ namespace helloworld
                 string menu_name = menu_manager.getNameById(id);
                 this.menu_panel[j].Visible = true;
                 this.menu_name_label[j].Text = menu_name;
-                this.menu_price_label[j].Text = (menu_manager.getPrice(menu_name)).ToString();
+                this.menu_price_label[j].Text = (menu_manager.getPrice(menu_name)).ToString() + "円";
                 if (this.menu_manager.canChangeSoba(id))
                 {
                     this.change_button[j].Visible = true;
@@ -177,18 +201,18 @@ namespace helloworld
                 string menu_name = menu_manager.getNameById(75);
                 this.menu_panel[15].Visible = true;
                 this.menu_name_label[15].Text = menu_name;
-                this.menu_price_label[15].Text = (menu_manager.getPrice(menu_name)).ToString();
+                this.menu_price_label[15].Text = (menu_manager.getPrice(menu_name)).ToString() + "円";
                 this.change_button[15].Visible = false;
             }
         }
 
         private void setRiceMenu(int id)
         {
-            int j = id <= 54 ? (id - RICE_FLAG_ID)/3 : 10;
+            int j = id <= 54 ? (id - RICE_FLAG_ID) / 3 : 10;
             string menu_name = menu_manager.getNameById(id);
             this.menu_panel[j].Visible = true;
             this.menu_name_label[j].Text = menu_name;
-            this.menu_price_label[j].Text = (menu_manager.getPrice(menu_name)).ToString();
+            this.menu_price_label[j].Text = (menu_manager.getPrice(menu_name)).ToString() + "円";
             if (this.menu_manager.canChangeSize(id))
             {
                 this.change_button[j].Visible = true;
@@ -201,13 +225,13 @@ namespace helloworld
 
         private void setSideDishMenu(int id)
         {
-           if (id != 57 && id != 70 && id != 72 && id != 74)
+            if (id != 57 && id != 70 && id != 72 && id != 74)
             {
-              
+
                 string menu_name = menu_manager.getNameById(id);
                 this.menu_panel[side_dish_cnt].Visible = true;
                 this.menu_name_label[side_dish_cnt].Text = menu_name;
-                this.menu_price_label[side_dish_cnt].Text = (menu_manager.getPrice(menu_name)).ToString();
+                this.menu_price_label[side_dish_cnt].Text = (menu_manager.getPrice(menu_name)).ToString() + "円";
                 if (this.menu_manager.canChangeSize(id))
                 {
                     this.change_button[side_dish_cnt].Visible = true;
@@ -226,7 +250,7 @@ namespace helloworld
             string menu_name = menu_manager.getNameById(id);
             this.menu_panel[j].Visible = true;
             this.menu_name_label[j].Text = menu_name;
-            this.menu_price_label[j].Text = (menu_manager.getPrice(menu_name)).ToString();
+            this.menu_price_label[j].Text = (menu_manager.getPrice(menu_name)).ToString() + "円";
             if (this.menu_manager.canChangeSize(id))
             {
                 this.change_button[j].Visible = true;
@@ -243,7 +267,7 @@ namespace helloworld
             string menu_name = menu_manager.getNameById(id);
             this.menu_panel[j].Visible = true;
             this.menu_name_label[j].Text = menu_name;
-            this.menu_price_label[j].Text = (menu_manager.getPrice(menu_name)).ToString();
+            this.menu_price_label[j].Text = (menu_manager.getPrice(menu_name)).ToString() + "円";
             if (this.menu_manager.canChangeSize(id))
             {
                 this.change_button[j].Visible = true;
@@ -546,6 +570,9 @@ namespace helloworld
 
         }
 
-       
+        private void label44_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
