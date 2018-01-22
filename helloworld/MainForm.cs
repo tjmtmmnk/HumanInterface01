@@ -11,16 +11,18 @@ using System.IO;
 namespace helloworld
 {
 
-    class PuchaseItem
-    {
-        public String name;
-        public int num;
-        public int price;
-        public int total_price;
-    }
+
 
     public partial class MainForm : helloworld.Form_orig
     {
+        class PuchaseItem
+        {
+            public string name;
+            public int num;
+            public int price;
+            public int total_price;
+        }
+
         private const int UDON_FLAG_ID = 1;
         private const int RAMEN_FLAG_ID = 21;
         private const int RICE_FLAG_ID = 27;
@@ -35,6 +37,7 @@ namespace helloworld
 
         private Button[] change_button;
         private Button[] purchase_button;
+        private Button[] delete_button;
         private Label[] menu_name_label;
         private Label[] menu_price_label;
         private Label[] purchase_menu_name_label;
@@ -50,15 +53,16 @@ namespace helloworld
         private static int side_dish_cnt = 0;
         private static int now_purchase_page = 1;
 
+
         public MainForm()
         {
             InitializeComponent();
-            start_log();
             menu_manager = new myMenuManager();
             menu_list = new ArrayList();
             purchase_list = new List<PuchaseItem>();
             change_button = new Button[GRID_NUM];
             purchase_button = new Button[GRID_NUM];
+            delete_button = new Button[PURCHASE_LIST_NUM];
             tab_button = new Panel[TAB_NUM];
             menu_name_label = new Label[GRID_NUM];
             menu_price_label = new Label[GRID_NUM];
@@ -101,6 +105,8 @@ namespace helloworld
             menu_panel[16] = panel20; menu_panel[17] = panel17; menu_panel[18] = panel18; menu_panel[19] = panel19;
 
             tab_button[0] = panel21; tab_button[1] = panel22; tab_button[2] = panel24; tab_button[3] = panel26; tab_button[4] = panel27;
+            delete_button[0] = button49; delete_button[1] = button50; delete_button[2] = button51;
+            delete_button[3] = button52; delete_button[4] = button53; delete_button[5] = button54;
 
             purchase_menu_panel[0] = panel31; purchase_menu_name_label[0] = label47; purchase_menu_num_label[0] = label48; purchase_menu_price_label[0] = label49;
             purchase_menu_panel[1] = panel32; purchase_menu_name_label[1] = label52; purchase_menu_num_label[1] = label51; purchase_menu_price_label[1] = label50;
@@ -121,7 +127,8 @@ namespace helloworld
             }
             setNoodleMenu(75);
 
-            label44.Text = user_money.ToString();
+            label44.Text = user_money.ToString() + "円"; //投入金額
+            label46.Text = total_price.ToString() + "円";
 
 
         }
@@ -201,6 +208,10 @@ namespace helloworld
             {
                 menu_panel[i].Visible = false;
             }
+            for (int i = 0; i < 6; i++)
+            {
+                purchase_menu_panel[i].Visible = false;
+            }
         }
 
         private void nextPage(object sender, EventArgs e)
@@ -220,17 +231,26 @@ namespace helloworld
             PuchaseItem item = new PuchaseItem();
             int tag = int.Parse(((Button)sender).Tag.ToString());
             item.name = menu_name_label[tag].Text;
-            item.price = int.Parse(menu_price_label[tag].Text);
-            /*SelectNum newform = new SelectNum();
-             * newform.Show();
-             * this.Hide();
-             */
-            if (is_selected_item_num) //num select画面へ遷移
-            {
-                item.num = purchase_item_num;
-                item.total_price = item.price * purchase_item_num;
-                purchase_list.Add(item);
-            }
+            string temp_price = menu_price_label[tag].Text;
+            temp_price = temp_price.Replace("円", "");
+            item.price = int.Parse(temp_price);
+            item.num = 1;
+            item.total_price = item.price;
+            total_price += item.total_price;
+            purchase_list.Add(item);
+            appearInPurchaseDisplay();
+            //select_quantity_form = new SelectQuantityForm(item.name,this);
+            //select_quantity_form.Show();
+
+            //this.Hide();
+            //    if (is_selected_item_num)
+            //    {
+            //        item.num = purchase_item_num;
+            //        item.total_price = item.price * purchase_item_num;
+            //        purchase_list.Add(item);
+            //        Console.WriteLine("total price is " + item.total_price.ToString());
+            //    }
+
         }
 
         private void appearInPurchaseDisplay()
@@ -238,25 +258,53 @@ namespace helloworld
             int purchase_list_size = purchase_list.Count;
             int required_page_num = purchase_list_size / PURCHASE_LIST_NUM + 1;
             if (now_purchase_page > required_page_num) { return; }
-            for (int i = 0; i < purchase_list_size; i++)
+            if (purchase_list_size > 6 && now_purchase_page == 1)
+            {
+                button14.Visible = true;
+                button55.Visible = false;
+            }
+            else if (now_purchase_page > 1)
+            {
+                button14.Visible = true;
+                button55.Visible = true;
+            }
+            else if (purchase_list_size <= 6)
+            {
+                button14.Visible = false;
+                button55.Visible = false;
+            }
+
+            for (int i = 0; i < purchase_list_size % 6; i++)
             {
                 int j = required_page_num <= 1 ? i : i + (now_purchase_page - 1) * PURCHASE_LIST_NUM;
 
                 purchase_menu_panel[i].Visible = true;
+                delete_button[i].Visible = true;
+                purchase_menu_panel[i].BorderStyle = BorderStyle.FixedSingle;
                 purchase_menu_name_label[i].Text = purchase_list[j].name;
-                purchase_menu_num_label[i].Text = purchase_list[j].num.ToString();
-                purchase_menu_price_label[i].Text = purchase_list[j].total_price.ToString();
+                purchase_menu_num_label[i].Text = (purchase_list[j].num).ToString();
+                purchase_menu_price_label[i].Text = (purchase_list[j].total_price).ToString();
 
             }
+            label46.Text = total_price.ToString() + "円";
             highlightCanPurchaseMenu();
         }
 
         private void deleteItemInPurchaseDisplay(object sender, EventArgs e)
         {
             int tag = int.Parse(((Button)sender).Tag.ToString());
+            total_price -= purchase_list[tag].price;
             purchase_list.RemoveAt(tag);
+            for (int i = 0; i < 6; i++)
+            {
+                purchase_menu_name_label[i].Text = "";
+                purchase_menu_num_label[i].Text = "";
+                purchase_menu_price_label[i].Text = "";
+                delete_button[i].Visible = false;
+                purchase_menu_panel[i].BorderStyle = BorderStyle.None;
+            }
             appearInPurchaseDisplay();
-            //updateDisplay();
+            updateDisplay();
         }
 
         private void highlightCanPurchaseMenu()
@@ -264,8 +312,10 @@ namespace helloworld
             int i = 0;
             while (menu_panel[i].Visible)
             {
-                int menu_price = int.Parse(menu_price_label[i].Text);
-                if (user_money < menu_price)
+                int menu_price = int.Parse(menu_price_label[i].Text.Replace("円", ""));
+                int diff = user_money - total_price;
+                if (diff < 0) { diff = 0; }
+                if (diff < menu_price)
                 {
                     purchase_button[i].Enabled = false;
                     menu_panel[i].BackColor = Color.DarkGray;
@@ -696,6 +746,11 @@ namespace helloworld
         }
 
         private void label44_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void label48_Click(object sender, EventArgs e)
         {
 
         }

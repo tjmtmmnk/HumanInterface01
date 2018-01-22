@@ -143,6 +143,37 @@
             this.panel27 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.panel28 = new System.Windows.Forms.Panel();
+            this.button55 = new System.Windows.Forms.Button();
+            this.panel37 = new System.Windows.Forms.Panel();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.button54 = new System.Windows.Forms.Button();
+            this.panel35 = new System.Windows.Forms.Panel();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.button53 = new System.Windows.Forms.Button();
+            this.panel34 = new System.Windows.Forms.Panel();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.button52 = new System.Windows.Forms.Button();
+            this.panel33 = new System.Windows.Forms.Panel();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.button51 = new System.Windows.Forms.Button();
+            this.panel32 = new System.Windows.Forms.Panel();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.button50 = new System.Windows.Forms.Button();
+            this.panel31 = new System.Windows.Forms.Panel();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.button49 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.panel29 = new System.Windows.Forms.Panel();
             this.button48 = new System.Windows.Forms.Button();
@@ -154,36 +185,6 @@
             this.panel30 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel36 = new System.Windows.Forms.Panel();
-            this.panel31 = new System.Windows.Forms.Panel();
-            this.panel32 = new System.Windows.Forms.Panel();
-            this.panel33 = new System.Windows.Forms.Panel();
-            this.panel34 = new System.Windows.Forms.Panel();
-            this.panel35 = new System.Windows.Forms.Panel();
-            this.panel37 = new System.Windows.Forms.Panel();
-            this.button49 = new System.Windows.Forms.Button();
-            this.button50 = new System.Windows.Forms.Button();
-            this.button51 = new System.Windows.Forms.Button();
-            this.button52 = new System.Windows.Forms.Button();
-            this.button53 = new System.Windows.Forms.Button();
-            this.button54 = new System.Windows.Forms.Button();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -211,14 +212,14 @@
             this.panel26.SuspendLayout();
             this.panel27.SuspendLayout();
             this.panel28.SuspendLayout();
+            this.panel37.SuspendLayout();
+            this.panel35.SuspendLayout();
+            this.panel34.SuspendLayout();
+            this.panel33.SuspendLayout();
+            this.panel32.SuspendLayout();
+            this.panel31.SuspendLayout();
             this.panel29.SuspendLayout();
             this.panel30.SuspendLayout();
-            this.panel31.SuspendLayout();
-            this.panel32.SuspendLayout();
-            this.panel33.SuspendLayout();
-            this.panel34.SuspendLayout();
-            this.panel35.SuspendLayout();
-            this.panel37.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -1489,6 +1490,7 @@
             // panel28
             // 
             this.panel28.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel28.Controls.Add(this.button55);
             this.panel28.Controls.Add(this.panel37);
             this.panel28.Controls.Add(this.panel35);
             this.panel28.Controls.Add(this.panel34);
@@ -1503,6 +1505,330 @@
             this.panel28.TabIndex = 22;
             this.panel28.Paint += new System.Windows.Forms.PaintEventHandler(this.panel28_Paint);
             // 
+            // button55
+            // 
+            this.button55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button55.Location = new System.Drawing.Point(10, 357);
+            this.button55.Name = "button55";
+            this.button55.Size = new System.Drawing.Size(60, 44);
+            this.button55.TabIndex = 5;
+            this.button55.Text = "戻る";
+            this.button55.UseVisualStyleBackColor = false;
+            this.button55.Click += new System.EventHandler(this.previousPage);
+            // 
+            // panel37
+            // 
+            this.panel37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel37.Controls.Add(this.label62);
+            this.panel37.Controls.Add(this.label63);
+            this.panel37.Controls.Add(this.label64);
+            this.panel37.Controls.Add(this.button54);
+            this.panel37.Location = new System.Drawing.Point(3, 298);
+            this.panel37.Name = "panel37";
+            this.panel37.Size = new System.Drawing.Size(212, 53);
+            this.panel37.TabIndex = 4;
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Location = new System.Drawing.Point(115, 30);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(41, 12);
+            this.label62.TabIndex = 6;
+            this.label62.Text = "label62";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Location = new System.Drawing.Point(115, 8);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(41, 12);
+            this.label63.TabIndex = 5;
+            this.label63.Text = "label63";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Location = new System.Drawing.Point(25, 8);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(41, 12);
+            this.label64.TabIndex = 4;
+            this.label64.Text = "label64";
+            // 
+            // button54
+            // 
+            this.button54.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button54.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button54.Location = new System.Drawing.Point(163, -1);
+            this.button54.Name = "button54";
+            this.button54.Size = new System.Drawing.Size(48, 53);
+            this.button54.TabIndex = 1;
+            this.button54.Tag = "5";
+            this.button54.Text = "×";
+            this.button54.UseVisualStyleBackColor = false;
+            this.button54.Click += new System.EventHandler(this.deleteItemInPurchaseDisplay);
+            // 
+            // panel35
+            // 
+            this.panel35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel35.Controls.Add(this.label59);
+            this.panel35.Controls.Add(this.label60);
+            this.panel35.Controls.Add(this.label61);
+            this.panel35.Controls.Add(this.button53);
+            this.panel35.Location = new System.Drawing.Point(3, 239);
+            this.panel35.Name = "panel35";
+            this.panel35.Size = new System.Drawing.Size(212, 53);
+            this.panel35.TabIndex = 4;
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(115, 30);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(41, 12);
+            this.label59.TabIndex = 6;
+            this.label59.Text = "label59";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(115, 8);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(41, 12);
+            this.label60.TabIndex = 5;
+            this.label60.Text = "label60";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(25, 8);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(41, 12);
+            this.label61.TabIndex = 4;
+            this.label61.Text = "label61";
+            // 
+            // button53
+            // 
+            this.button53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button53.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button53.Location = new System.Drawing.Point(163, -1);
+            this.button53.Name = "button53";
+            this.button53.Size = new System.Drawing.Size(48, 53);
+            this.button53.TabIndex = 1;
+            this.button53.Tag = "4";
+            this.button53.Text = "×";
+            this.button53.UseVisualStyleBackColor = false;
+            this.button53.Click += new System.EventHandler(this.deleteItemInPurchaseDisplay);
+            // 
+            // panel34
+            // 
+            this.panel34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel34.Controls.Add(this.label56);
+            this.panel34.Controls.Add(this.label57);
+            this.panel34.Controls.Add(this.label58);
+            this.panel34.Controls.Add(this.button52);
+            this.panel34.Location = new System.Drawing.Point(3, 180);
+            this.panel34.Name = "panel34";
+            this.panel34.Size = new System.Drawing.Size(212, 53);
+            this.panel34.TabIndex = 4;
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(115, 30);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(41, 12);
+            this.label56.TabIndex = 6;
+            this.label56.Text = "label56";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(115, 8);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(41, 12);
+            this.label57.TabIndex = 5;
+            this.label57.Text = "label57";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(25, 8);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(41, 12);
+            this.label58.TabIndex = 4;
+            this.label58.Text = "label58";
+            // 
+            // button52
+            // 
+            this.button52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button52.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button52.Location = new System.Drawing.Point(163, -1);
+            this.button52.Name = "button52";
+            this.button52.Size = new System.Drawing.Size(48, 53);
+            this.button52.TabIndex = 1;
+            this.button52.Tag = "3";
+            this.button52.Text = "×";
+            this.button52.UseVisualStyleBackColor = false;
+            this.button52.Click += new System.EventHandler(this.deleteItemInPurchaseDisplay);
+            // 
+            // panel33
+            // 
+            this.panel33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel33.Controls.Add(this.label53);
+            this.panel33.Controls.Add(this.label54);
+            this.panel33.Controls.Add(this.label55);
+            this.panel33.Controls.Add(this.button51);
+            this.panel33.Location = new System.Drawing.Point(3, 121);
+            this.panel33.Name = "panel33";
+            this.panel33.Size = new System.Drawing.Size(212, 53);
+            this.panel33.TabIndex = 4;
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(115, 28);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(41, 12);
+            this.label53.TabIndex = 6;
+            this.label53.Text = "label53";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(115, 8);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(41, 12);
+            this.label54.TabIndex = 5;
+            this.label54.Text = "label54";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(25, 8);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(41, 12);
+            this.label55.TabIndex = 4;
+            this.label55.Text = "label55";
+            // 
+            // button51
+            // 
+            this.button51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button51.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button51.Location = new System.Drawing.Point(163, -1);
+            this.button51.Name = "button51";
+            this.button51.Size = new System.Drawing.Size(48, 53);
+            this.button51.TabIndex = 1;
+            this.button51.Tag = "2";
+            this.button51.Text = "×";
+            this.button51.UseVisualStyleBackColor = false;
+            this.button51.Click += new System.EventHandler(this.deleteItemInPurchaseDisplay);
+            // 
+            // panel32
+            // 
+            this.panel32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel32.Controls.Add(this.label50);
+            this.panel32.Controls.Add(this.label51);
+            this.panel32.Controls.Add(this.label52);
+            this.panel32.Controls.Add(this.button50);
+            this.panel32.Location = new System.Drawing.Point(3, 62);
+            this.panel32.Name = "panel32";
+            this.panel32.Size = new System.Drawing.Size(212, 53);
+            this.panel32.TabIndex = 4;
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(115, 30);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(41, 12);
+            this.label50.TabIndex = 6;
+            this.label50.Text = "label50";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(115, 8);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(41, 12);
+            this.label51.TabIndex = 5;
+            this.label51.Text = "label51";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(25, 8);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(41, 12);
+            this.label52.TabIndex = 4;
+            this.label52.Text = "label52";
+            // 
+            // button50
+            // 
+            this.button50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button50.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button50.Location = new System.Drawing.Point(163, -1);
+            this.button50.Name = "button50";
+            this.button50.Size = new System.Drawing.Size(48, 53);
+            this.button50.TabIndex = 1;
+            this.button50.Tag = "1";
+            this.button50.Text = "×";
+            this.button50.UseVisualStyleBackColor = false;
+            this.button50.Click += new System.EventHandler(this.deleteItemInPurchaseDisplay);
+            // 
+            // panel31
+            // 
+            this.panel31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel31.Controls.Add(this.label49);
+            this.panel31.Controls.Add(this.label48);
+            this.panel31.Controls.Add(this.label47);
+            this.panel31.Controls.Add(this.button49);
+            this.panel31.Location = new System.Drawing.Point(3, 3);
+            this.panel31.Name = "panel31";
+            this.panel31.Size = new System.Drawing.Size(212, 53);
+            this.panel31.TabIndex = 3;
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(115, 30);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(41, 12);
+            this.label49.TabIndex = 3;
+            this.label49.Text = "label49";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(115, 8);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(41, 12);
+            this.label48.TabIndex = 2;
+            this.label48.Text = "label48";
+            this.label48.Click += new System.EventHandler(this.label48_Click);
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(25, 8);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(41, 12);
+            this.label47.TabIndex = 1;
+            this.label47.Text = "label47";
+            // 
+            // button49
+            // 
+            this.button49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button49.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button49.Location = new System.Drawing.Point(163, -1);
+            this.button49.Name = "button49";
+            this.button49.Size = new System.Drawing.Size(48, 53);
+            this.button49.TabIndex = 0;
+            this.button49.Tag = "0";
+            this.button49.Text = "×";
+            this.button49.UseVisualStyleBackColor = false;
+            this.button49.Click += new System.EventHandler(this.deleteItemInPurchaseDisplay);
+            // 
             // button14
             // 
             this.button14.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -1514,7 +1840,7 @@
             this.button14.Text = "次へ";
             this.button14.UseVisualStyleBackColor = false;
             this.button14.Visible = false;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
+            this.button14.Click += new System.EventHandler(this.nextPage);
             // 
             // panel29
             // 
@@ -1627,306 +1953,6 @@
             this.panel36.Size = new System.Drawing.Size(174, 53);
             this.panel36.TabIndex = 4;
             // 
-            // panel31
-            // 
-            this.panel31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel31.Controls.Add(this.label49);
-            this.panel31.Controls.Add(this.label48);
-            this.panel31.Controls.Add(this.label47);
-            this.panel31.Controls.Add(this.button49);
-            this.panel31.Location = new System.Drawing.Point(3, 3);
-            this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(212, 53);
-            this.panel31.TabIndex = 3;
-            // 
-            // panel32
-            // 
-            this.panel32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel32.Controls.Add(this.label50);
-            this.panel32.Controls.Add(this.label51);
-            this.panel32.Controls.Add(this.label52);
-            this.panel32.Controls.Add(this.button50);
-            this.panel32.Location = new System.Drawing.Point(3, 62);
-            this.panel32.Name = "panel32";
-            this.panel32.Size = new System.Drawing.Size(212, 53);
-            this.panel32.TabIndex = 4;
-            // 
-            // panel33
-            // 
-            this.panel33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel33.Controls.Add(this.label53);
-            this.panel33.Controls.Add(this.label54);
-            this.panel33.Controls.Add(this.label55);
-            this.panel33.Controls.Add(this.button51);
-            this.panel33.Location = new System.Drawing.Point(3, 121);
-            this.panel33.Name = "panel33";
-            this.panel33.Size = new System.Drawing.Size(212, 53);
-            this.panel33.TabIndex = 4;
-            // 
-            // panel34
-            // 
-            this.panel34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel34.Controls.Add(this.label56);
-            this.panel34.Controls.Add(this.label57);
-            this.panel34.Controls.Add(this.label58);
-            this.panel34.Controls.Add(this.button52);
-            this.panel34.Location = new System.Drawing.Point(3, 180);
-            this.panel34.Name = "panel34";
-            this.panel34.Size = new System.Drawing.Size(212, 53);
-            this.panel34.TabIndex = 4;
-            // 
-            // panel35
-            // 
-            this.panel35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel35.Controls.Add(this.label59);
-            this.panel35.Controls.Add(this.label60);
-            this.panel35.Controls.Add(this.label61);
-            this.panel35.Controls.Add(this.button53);
-            this.panel35.Location = new System.Drawing.Point(3, 239);
-            this.panel35.Name = "panel35";
-            this.panel35.Size = new System.Drawing.Size(212, 53);
-            this.panel35.TabIndex = 4;
-            // 
-            // panel37
-            // 
-            this.panel37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel37.Controls.Add(this.label62);
-            this.panel37.Controls.Add(this.label63);
-            this.panel37.Controls.Add(this.label64);
-            this.panel37.Controls.Add(this.button54);
-            this.panel37.Location = new System.Drawing.Point(3, 298);
-            this.panel37.Name = "panel37";
-            this.panel37.Size = new System.Drawing.Size(212, 53);
-            this.panel37.TabIndex = 4;
-            // 
-            // button49
-            // 
-            this.button49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button49.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button49.Location = new System.Drawing.Point(163, -1);
-            this.button49.Name = "button49";
-            this.button49.Size = new System.Drawing.Size(48, 53);
-            this.button49.TabIndex = 0;
-            this.button49.Text = "×";
-            this.button49.UseVisualStyleBackColor = false;
-            // 
-            // button50
-            // 
-            this.button50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button50.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button50.Location = new System.Drawing.Point(163, -1);
-            this.button50.Name = "button50";
-            this.button50.Size = new System.Drawing.Size(48, 53);
-            this.button50.TabIndex = 1;
-            this.button50.Text = "×";
-            this.button50.UseVisualStyleBackColor = false;
-            // 
-            // button51
-            // 
-            this.button51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button51.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button51.Location = new System.Drawing.Point(163, -1);
-            this.button51.Name = "button51";
-            this.button51.Size = new System.Drawing.Size(48, 53);
-            this.button51.TabIndex = 1;
-            this.button51.Text = "×";
-            this.button51.UseVisualStyleBackColor = false;
-            // 
-            // button52
-            // 
-            this.button52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button52.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button52.Location = new System.Drawing.Point(163, -1);
-            this.button52.Name = "button52";
-            this.button52.Size = new System.Drawing.Size(48, 53);
-            this.button52.TabIndex = 1;
-            this.button52.Text = "×";
-            this.button52.UseVisualStyleBackColor = false;
-            // 
-            // button53
-            // 
-            this.button53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button53.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button53.Location = new System.Drawing.Point(163, -1);
-            this.button53.Name = "button53";
-            this.button53.Size = new System.Drawing.Size(48, 53);
-            this.button53.TabIndex = 1;
-            this.button53.Text = "×";
-            this.button53.UseVisualStyleBackColor = false;
-            // 
-            // button54
-            // 
-            this.button54.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.button54.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button54.Location = new System.Drawing.Point(163, -1);
-            this.button54.Name = "button54";
-            this.button54.Size = new System.Drawing.Size(48, 53);
-            this.button54.TabIndex = 1;
-            this.button54.Text = "×";
-            this.button54.UseVisualStyleBackColor = false;
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(25, 8);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(41, 12);
-            this.label47.TabIndex = 1;
-            this.label47.Text = "label47";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(115, 8);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(41, 12);
-            this.label48.TabIndex = 2;
-            this.label48.Text = "label48";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(115, 30);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(41, 12);
-            this.label49.TabIndex = 3;
-            this.label49.Text = "label49";
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(115, 30);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(41, 12);
-            this.label50.TabIndex = 6;
-            this.label50.Text = "label50";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(115, 8);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(41, 12);
-            this.label51.TabIndex = 5;
-            this.label51.Text = "label51";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(25, 8);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(41, 12);
-            this.label52.TabIndex = 4;
-            this.label52.Text = "label52";
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(115, 28);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(41, 12);
-            this.label53.TabIndex = 6;
-            this.label53.Text = "label53";
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(115, 8);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(41, 12);
-            this.label54.TabIndex = 5;
-            this.label54.Text = "label54";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(25, 8);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(41, 12);
-            this.label55.TabIndex = 4;
-            this.label55.Text = "label55";
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(115, 30);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(41, 12);
-            this.label56.TabIndex = 6;
-            this.label56.Text = "label56";
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(115, 8);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(41, 12);
-            this.label57.TabIndex = 5;
-            this.label57.Text = "label57";
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(25, 8);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(41, 12);
-            this.label58.TabIndex = 4;
-            this.label58.Text = "label58";
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(115, 30);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(41, 12);
-            this.label59.TabIndex = 6;
-            this.label59.Text = "label59";
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(115, 8);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(41, 12);
-            this.label60.TabIndex = 5;
-            this.label60.Text = "label60";
-            // 
-            // label61
-            // 
-            this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(25, 8);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(41, 12);
-            this.label61.TabIndex = 4;
-            this.label61.Text = "label61";
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(115, 30);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(41, 12);
-            this.label62.TabIndex = 6;
-            this.label62.Text = "label62";
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(115, 8);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(41, 12);
-            this.label63.TabIndex = 5;
-            this.label63.Text = "label63";
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Location = new System.Drawing.Point(25, 8);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(41, 12);
-            this.label64.TabIndex = 4;
-            this.label64.Text = "label64";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -2010,22 +2036,22 @@
             this.panel26.ResumeLayout(false);
             this.panel27.ResumeLayout(false);
             this.panel28.ResumeLayout(false);
+            this.panel37.ResumeLayout(false);
+            this.panel37.PerformLayout();
+            this.panel35.ResumeLayout(false);
+            this.panel35.PerformLayout();
+            this.panel34.ResumeLayout(false);
+            this.panel34.PerformLayout();
+            this.panel33.ResumeLayout(false);
+            this.panel33.PerformLayout();
+            this.panel32.ResumeLayout(false);
+            this.panel32.PerformLayout();
+            this.panel31.ResumeLayout(false);
+            this.panel31.PerformLayout();
             this.panel29.ResumeLayout(false);
             this.panel29.PerformLayout();
             this.panel30.ResumeLayout(false);
             this.panel30.PerformLayout();
-            this.panel31.ResumeLayout(false);
-            this.panel31.PerformLayout();
-            this.panel32.ResumeLayout(false);
-            this.panel32.PerformLayout();
-            this.panel33.ResumeLayout(false);
-            this.panel33.PerformLayout();
-            this.panel34.ResumeLayout(false);
-            this.panel34.PerformLayout();
-            this.panel35.ResumeLayout(false);
-            this.panel35.PerformLayout();
-            this.panel37.ResumeLayout(false);
-            this.panel37.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2187,5 +2213,6 @@
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Button button49;
+        private System.Windows.Forms.Button button55;
     }
 }
