@@ -187,9 +187,11 @@ C:\Users\Tsujimoto\workspace\HumanInterface01\helloworld\obj\Debug\helloworld.Fo
 C:\Users\Tsujimoto\workspace\HumanInterface01\helloworld\obj\Debug\helloworld.formEnd.resources
 C:\Users\Tsujimoto\workspace\HumanInterface01\helloworld\obj\Debug\helloworld.Form_orig.resources
 C:\Users\Tsujimoto\workspace\HumanInterface01\helloworld\obj\Debug\helloworld.insertMoney.resources
-C:\Users\Tsujimoto\workspace\HumanInterface01\helloworld\obj\Debug\helloworld.MainForm.resources
 C:\Users\Tsujimoto\workspace\HumanInterface01\helloworld\obj\Debug\helloworld.Properties.Resources.resources
 C:\Users\Tsujimoto\workspace\HumanInterface01\helloworld\obj\Debug\vendor.csproj.GenerateResource.Cache
 C:\Users\Tsujimoto\workspace\HumanInterface01\helloworld\obj\Debug\helloworld.TrustInfo.xml
 C:\Users\Tsujimoto\workspace\HumanInterface01\helloworld\obj\Debug\helloworld.exe.manifest
 C:\Users\Tsujimoto\workspace\HumanInterface01\helloworld\obj\Debug\helloworld.application
+C:\Users\Tsujimoto\workspace\HumanInterface01\helloworld\obj\Debug\helloworld.MainForm.resources
+C:\Users\Tsujimoto\workspace\HumanInterface01\helloworld\obj\Debug\helloworld.SelectQuantityForm.resources
+C:\Users\Tsujimoto\workspace\HumanInterface01\helloworld\obj\Debug\helloworld.SelectSizeForm.resources

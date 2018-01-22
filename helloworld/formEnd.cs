@@ -34,7 +34,7 @@ namespace helloworld
         private void formEnd_Load(object sender, EventArgs e)
         {
             textBox1.Text = item_name;
-            textBox2.Text = money.ToString();
+            textBox2.Text = user_money.ToString();
         }
     }
 }

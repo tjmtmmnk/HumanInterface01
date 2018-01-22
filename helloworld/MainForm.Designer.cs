@@ -143,6 +143,10 @@
             this.panel27 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.panel28 = new System.Windows.Forms.Panel();
+<<<<<<< HEAD
+=======
+            this.button55 = new System.Windows.Forms.Button();
+>>>>>>> 1d9c71d0f48a8b71634958f4608ea37db91b6339
             this.panel37 = new System.Windows.Forms.Panel();
             this.label62 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
@@ -1491,6 +1495,7 @@
             // panel28
             // 
             this.panel28.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel28.Controls.Add(this.button55);
             this.panel28.Controls.Add(this.panel37);
             this.panel28.Controls.Add(this.panel35);
             this.panel28.Controls.Add(this.panel34);
@@ -1505,6 +1510,7 @@
             this.panel28.TabIndex = 22;
             this.panel28.Paint += new System.Windows.Forms.PaintEventHandler(this.panel28_Paint);
             // 
+<<<<<<< HEAD
             // panel37
             // 
             this.panel37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1607,6 +1613,123 @@
             this.button53.Text = "×";
             this.button53.UseVisualStyleBackColor = false;
             // 
+=======
+            // button55
+            // 
+            this.button55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button55.Location = new System.Drawing.Point(10, 357);
+            this.button55.Name = "button55";
+            this.button55.Size = new System.Drawing.Size(60, 44);
+            this.button55.TabIndex = 5;
+            this.button55.Text = "戻る";
+            this.button55.UseVisualStyleBackColor = false;
+            this.button55.Click += new System.EventHandler(this.previousPage);
+            // 
+            // panel37
+            // 
+            this.panel37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel37.Controls.Add(this.label62);
+            this.panel37.Controls.Add(this.label63);
+            this.panel37.Controls.Add(this.label64);
+            this.panel37.Controls.Add(this.button54);
+            this.panel37.Location = new System.Drawing.Point(3, 298);
+            this.panel37.Name = "panel37";
+            this.panel37.Size = new System.Drawing.Size(212, 53);
+            this.panel37.TabIndex = 4;
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Location = new System.Drawing.Point(115, 30);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(41, 12);
+            this.label62.TabIndex = 6;
+            this.label62.Text = "label62";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Location = new System.Drawing.Point(115, 8);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(41, 12);
+            this.label63.TabIndex = 5;
+            this.label63.Text = "label63";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Location = new System.Drawing.Point(25, 8);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(41, 12);
+            this.label64.TabIndex = 4;
+            this.label64.Text = "label64";
+            // 
+            // button54
+            // 
+            this.button54.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button54.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button54.Location = new System.Drawing.Point(163, -1);
+            this.button54.Name = "button54";
+            this.button54.Size = new System.Drawing.Size(48, 53);
+            this.button54.TabIndex = 1;
+            this.button54.Tag = "5";
+            this.button54.Text = "×";
+            this.button54.UseVisualStyleBackColor = false;
+            this.button54.Click += new System.EventHandler(this.deleteItemInPurchaseDisplay);
+            // 
+            // panel35
+            // 
+            this.panel35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel35.Controls.Add(this.label59);
+            this.panel35.Controls.Add(this.label60);
+            this.panel35.Controls.Add(this.label61);
+            this.panel35.Controls.Add(this.button53);
+            this.panel35.Location = new System.Drawing.Point(3, 239);
+            this.panel35.Name = "panel35";
+            this.panel35.Size = new System.Drawing.Size(212, 53);
+            this.panel35.TabIndex = 4;
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(115, 30);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(41, 12);
+            this.label59.TabIndex = 6;
+            this.label59.Text = "label59";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(115, 8);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(41, 12);
+            this.label60.TabIndex = 5;
+            this.label60.Text = "label60";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(25, 8);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(41, 12);
+            this.label61.TabIndex = 4;
+            this.label61.Text = "label61";
+            // 
+            // button53
+            // 
+            this.button53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button53.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button53.Location = new System.Drawing.Point(163, -1);
+            this.button53.Name = "button53";
+            this.button53.Size = new System.Drawing.Size(48, 53);
+            this.button53.TabIndex = 1;
+            this.button53.Tag = "4";
+            this.button53.Text = "×";
+            this.button53.UseVisualStyleBackColor = false;
+            this.button53.Click += new System.EventHandler(this.deleteItemInPurchaseDisplay);
+            // 
+>>>>>>> 1d9c71d0f48a8b71634958f4608ea37db91b6339
             // panel34
             // 
             this.panel34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -1657,6 +1780,7 @@
             this.button52.Tag = "3";
             this.button52.Text = "×";
             this.button52.UseVisualStyleBackColor = false;
+            this.button52.Click += new System.EventHandler(this.deleteItemInPurchaseDisplay);
             // 
             // panel33
             // 
@@ -1708,6 +1832,10 @@
             this.button51.Tag = "2";
             this.button51.Text = "×";
             this.button51.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
+=======
+            this.button51.Click += new System.EventHandler(this.deleteItemInPurchaseDisplay);
+>>>>>>> 1d9c71d0f48a8b71634958f4608ea37db91b6339
             // 
             // panel32
             // 
@@ -1759,6 +1887,10 @@
             this.button50.Tag = "1";
             this.button50.Text = "×";
             this.button50.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
+=======
+            this.button50.Click += new System.EventHandler(this.deleteItemInPurchaseDisplay);
+>>>>>>> 1d9c71d0f48a8b71634958f4608ea37db91b6339
             // 
             // panel31
             // 
@@ -1789,6 +1921,10 @@
             this.label48.Size = new System.Drawing.Size(41, 12);
             this.label48.TabIndex = 2;
             this.label48.Text = "label48";
+<<<<<<< HEAD
+=======
+            this.label48.Click += new System.EventHandler(this.label48_Click);
+>>>>>>> 1d9c71d0f48a8b71634958f4608ea37db91b6339
             // 
             // label47
             // 
@@ -1810,6 +1946,10 @@
             this.button49.Tag = "0";
             this.button49.Text = "×";
             this.button49.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
+=======
+            this.button49.Click += new System.EventHandler(this.deleteItemInPurchaseDisplay);
+>>>>>>> 1d9c71d0f48a8b71634958f4608ea37db91b6339
             // 
             // button14
             // 
@@ -1822,7 +1962,11 @@
             this.button14.Text = "次へ";
             this.button14.UseVisualStyleBackColor = false;
             this.button14.Visible = false;
+<<<<<<< HEAD
             this.button14.Click += new System.EventHandler(this.button14_Click);
+=======
+            this.button14.Click += new System.EventHandler(this.nextPage);
+>>>>>>> 1d9c71d0f48a8b71634958f4608ea37db91b6339
             // 
             // panel29
             // 
@@ -2195,5 +2339,6 @@
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Button button49;
+        private System.Windows.Forms.Button button55;
     }
 }

@@ -13,6 +13,7 @@ namespace helloworld
         public insertMoney()
         {
             InitializeComponent();
+            start_log();
         }
 
         private void inputMoney(object sender, EventArgs e)
@@ -21,18 +22,18 @@ namespace helloworld
             this.log(this, sender, e);
 
             Button btn = (Button)sender;
-            money += int.Parse(btn.Text);
-            textBox1.Text = money.ToString();
+            user_money += int.Parse(btn.Text);
+            textBox1.Text = user_money.ToString();
         }
         
         private void insertMoney_Load(object sender, EventArgs e)
         {
-            textBox1.Text = money.ToString();
+            textBox1.Text = user_money.ToString();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            money = 0;
+            user_money = 0;
             textBox1.Text = "0";
         }
 
@@ -41,8 +42,14 @@ namespace helloworld
             // ボタンを押したときのログを取る
             this.log(this, sender, e);
 
-            if (money <= 0) return;
+            if (user_money <= 0) return;
 
+            
+            MainForm main = new MainForm();
+            main.Show();
+            this.Hide();
+
+            //this.Close();
             // 新しいフォームへ移動
             /*
             移動先の名前 newform = new 移動先の名前();
